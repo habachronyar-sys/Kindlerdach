@@ -1,0 +1,99 @@
+/* Softer forms, warmer surfaces and more space around the photography. */
+:root{--paper:#f8f7f4;--red:#bd2429;--line:#e6e4de}
+.button{border-radius:999px;padding-inline:25px;box-shadow:0 5px 14px #62101410}
+.button:hover{box-shadow:0 7px 19px #62101421}
+.button-small{padding-inline:22px}
+.hero{margin:18px 20px 0;border-radius:30px}
+.hero-content{padding-top:60px}
+.hero-shade{background:linear-gradient(90deg,#101b19eb 0%,#101b19b8 33%,#101b1922 73%),linear-gradient(0deg,#101b1966,transparent 36%)}
+.hero-tag.google-rating{border:1px solid #ffffff90;border-radius:22px;box-shadow:0 18px 45px #101b1938;background:#fffdf8f5;padding:24px}
+.hero .google-rating .rating-score{font-weight:600}
+.rating-stars,.review-stars{color:#b77b19;letter-spacing:.12em}
+.rating-source{border-color:#e4e1d9;color:#77776e}
+.trust-strip{border:0;background:transparent}
+.trust-strip .container{padding-block:28px}
+.trust-strip b{background:#f1e7e2;min-width:27px;height:27px;border-radius:50%;display:grid;place-items:center;font-size:14px}
+.feature-image{border-radius:22px;isolation:isolate}
+.image-arrow{bottom:13px;right:13px;border-radius:50%;width:45px;height:45px;padding:0;display:grid;place-items:center;background:#fffdf4ef}
+.feature-title{margin-top:25px}
+.more-services{border-top-color:#e7e4dc}
+.service-accordion details{padding-inline:15px;border-radius:12px;transition:background .2s}
+.service-accordion details[open]{background:#eeece6;border-bottom-color:transparent}
+.about{margin-inline:20px;border-radius:32px;overflow:hidden;background:#eeece5}
+.about-copy{padding-right:max(36px,calc((100vw - 1280px)/2 - 20px))}
+.photo-label{border-radius:999px;background:#17231fde;backdrop-filter:blur(8px)}
+.gallery-item{border-radius:24px}
+.gallery-item>span{padding:50px 24px 21px}
+.gallery-item b{width:36px;height:36px;display:grid;place-items:center;background:#ffffff24;border:1px solid #ffffff42;border-radius:50%}
+.cta-band{border-radius:30px;margin-inline:20px;background:radial-gradient(ellipse at 95% 0%,#e04d48 0%,transparent 65%),#b82228}
+form{border-radius:28px;background:#eeece6;border:1px solid #e4e1d8;padding:38px}
+input,textarea,select{border-radius:11px;background:#ffffffc9;border-color:#dad8d0;padding:13px 14px;font-size:13px}
+textarea{border-radius:14px}
+.contact-details strong{font-size:19px}
+.contact-details a{width:fit-content}
+.footer{border-radius:30px 30px 0 0}
+.back-top{border-radius:50%}
+dialog{border-radius:22px;box-shadow:0 25px 90px #0008}
+.legal .legal-note{border-radius:14px}
+
+/* Reviews have their own calm, rounded surface instead of a row of boxes. */
+.reviews{padding:42px 34px 28px;margin-top:12px;border-radius:32px;background:linear-gradient(135deg,#eeeae3,#f0eee8 55%,#eee9e2);border:1px solid #e6e1d7}
+.reviews-heading{margin-bottom:27px;align-items:center}
+.reviews-heading .eyebrow{font-size:9px;letter-spacing:.14em}
+.reviews-heading h2{font-size:35px;line-height:1.13;font-weight:500;letter-spacing:-.045em;max-width:490px}
+.reviews-heading>.underlined{font-size:11px}
+.reviews-overview{display:flex;align-items:center;justify-content:space-between;gap:25px;padding-bottom:24px;margin-bottom:20px;border-bottom:1px solid #dbd7ce}
+.reviews-total{display:flex;align-items:center;gap:17px}
+.reviews-total>strong{font-size:54px;line-height:1;letter-spacing:-.06em;font-weight:500}
+.reviews-total>div{display:flex;flex-direction:column;gap:4px}
+.reviews-total>div>span:last-child{font-size:11px;color:#696b62}
+.reviews-connection{display:flex;align-items:center;gap:8px;background:#ffffff80;border:1px solid #dfdbd2;padding:8px 13px;border-radius:999px;font-size:10px;color:#676a60;max-width:340px;line-height:1.5}
+.review-status-dot{width:6px;height:6px;background:#989989;border-radius:50%;flex-shrink:0}
+.reviews-connection.is-connected .review-status-dot{background:#59794c}
+.reviews-connection.is-stale .review-status-dot{background:#b08a41}
+.review-controls{margin-bottom:10px}
+.review-controls>p{font-size:11px;color:#77786e}
+.review-controls>div{gap:7px}
+.review-controls button{border-radius:50%;background:#ffffffad;border:1px solid #ddd9ce;transition:background .2s,transform .2s;min-height:42px;min-width:42px}
+.review-controls button:hover{background:white;transform:translateY(-1px)}
+.review-controls #reviews-pause{border-radius:999px;font-size:10px;padding-inline:14px;min-width:135px}
+.review-grid.review-carousel{gap:20px;padding:12px 3px 20px;scrollbar-width:none}
+.review-carousel::-webkit-scrollbar{display:none}
+.review-carousel>.review{border:1px solid #e7e3da;border-top:1px solid #e7e3da;border-radius:24px;background:#fffdf9;box-shadow:0 5px 17px #39322405;padding:26px;min-height:260px;flex-basis:clamp(280px,calc((100% - 40px)/2.65),430px)}
+.review-stars{font-size:15px;line-height:1;letter-spacing:.15em}
+.review blockquote{margin-block:21px 25px}
+.review blockquote p{font-size:18px;line-height:1.65;letter-spacing:-.025em;color:#3e433b}
+.review-avatar{width:40px;height:40px;background:#ede9e0;color:#747162;font-size:11px}
+.review figcaption{gap:12px}
+.review figcaption strong{font-size:12px;font-weight:500}
+.review time{font-size:10px;color:#8a8b80}
+.review-excerpt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;white-space:pre-line}
+.review-read-more{border:0;background:none;color:var(--red);font-size:11px;font-weight:600;padding:7px 0 0;text-decoration:underline;text-underline-offset:3px}
+.all-reviews{margin-top:4px;border:1px solid #dcd8ce;border-radius:17px;overflow:hidden;background:#ffffff40}
+.all-reviews>summary{padding:16px 20px;font-size:12px;min-height:58px}
+.all-reviews[open]>summary{border-bottom:1px solid #e0dbd1}
+.all-review-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:20px;max-height:650px;overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#bd2429 #e6e1d7}
+.all-review-list .review{border:1px solid #e8e3d9;border-radius:19px;background:#fffdf9;padding:24px;scroll-margin-top:130px}
+.all-review-list .review blockquote p{font-size:14px;white-space:pre-line;line-height:1.85}
+.reviews-source{font-size:9px;line-height:1.9;color:#858579;margin-top:17px;max-width:930px}
+.review-empty{padding:25px;font-size:13px;color:#77786e}
+@media(min-width:1600px){.hero-content{padding-top:80px}}
+@media(max-width:1100px){.reviews{padding:32px 25px 25px}.reviews-heading h2{font-size:29px}.reviews-overview{gap:18px}.reviews-connection{max-width:250px}.review-carousel>.review{padding:23px}.about-copy{padding-right:32px}}
+@media(max-width:760px){
+  .hero{margin:10px 10px 0;border-radius:23px}.hero-content{padding-top:38px}
+  .hero-tag.google-rating{margin-inline:20px;border-radius:19px;padding:17px 20px}
+  .hero-actions{gap:13px}.hero-actions .button{min-height:50px}
+  .trust-strip .container{padding-block:23px}.trust-strip span{gap:7px}.trust-strip b{min-width:24px;height:24px;font-size:12px}
+  .reviews{width:calc(100% - 24px);margin-top:5px;padding:30px 19px 22px;border-radius:25px}
+  .reviews-heading{gap:17px;margin-bottom:24px}.reviews-heading h2{font-size:31px;max-width:300px}
+  .reviews-overview{align-items:flex-start;flex-direction:column;gap:16px;padding-bottom:20px;margin-bottom:18px}
+  .reviews-total>strong{font-size:46px}.reviews-total{gap:15px}.reviews-connection{max-width:100%;font-size:9px}
+  .review-controls{gap:13px}.review-controls>p{font-size:10px;max-width:270px}.review-controls>div{justify-content:flex-start;width:auto}
+  .review-grid.review-carousel{gap:14px;margin-right:-10px;padding-right:10px}.review-carousel>.review{flex-basis:89%;min-width:230px;border-radius:21px;min-height:265px;padding:23px}
+  .review blockquote p{font-size:17px}.all-review-list{grid-template-columns:1fr;padding:12px;gap:12px;max-height:580px}.all-review-list .review{padding:20px}
+  .all-reviews>summary{font-size:11px;padding-inline:15px;gap:10px}.all-reviews{border-radius:15px}
+  .about{margin-inline:10px;border-radius:25px}.about-copy{padding-right:24px}.photo-label{font-size:7px;letter-spacing:.1em}
+  .feature-image,.gallery-item{border-radius:19px}.cta-band{margin-inline:10px;border-radius:24px}.cta-band>.container{width:calc(100% - 40px)}
+  form{padding:27px 20px;border-radius:23px}.footer{border-radius:24px 24px 0 0}
+}
+@media(prefers-reduced-motion:reduce){.review-controls button{transition:none}}

@@ -1,0 +1,1285 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.kindler-dach.de/',
+
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: 'dc4867de',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Jul 06, 2026',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'datenschutz720ef5f0',
+        InitialPageUuid: '1665336b66424ec0ba91812605ee1956',
+        InitialPageId: '1209966105',
+        InitialEncodedPageAlias: 'ZGF0ZW5zY2h1dHo3MjBlZjVmMA==',
+        InitialHeaderUuid: 'b59630b9bc614d769db2572c013b2ddc',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div> <p class=\"rteBlock\">Wir verwenden Cookies und &auml;hnliche Technologien, um den sicheren Betrieb unserer Website zu gew&auml;hrleisten und ausgew&auml;hlte Dienste wie Google Maps, Friendly Captcha sowie die Kontaktaufnahme &uuml;ber WhatsApp bereitzustellen. Mit Ihrer Einwilligung k&ouml;nnen diese Dienste aktiviert werden. Weitere Informationen finden Sie in unserer Datenschutzerkl&auml;rung.<\/p> \n<\/div> \n',
+        translatedPageUrl: '',
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        
+        mapConsent: {
+            message: 'Dieser Inhalt wird von einem Drittanbieter, {0}, bereitgestellt. Falls aktiviert, kann {0} Informationen \u00FCber Ihre Aktivit\u00E4ten sammeln.',
+            enable: 'Aktivieren'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'https://www.kindler-dach.de/',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        planID: '103',
+        disableTracking: true,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        isInPreview: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+
+
+
+
+<meta name="d-service-worker" content="register">
+
+
+
+<link rel="canonical" href="https://www.kindler-dach.de/datenschutz720ef5f0">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/dc4867de/site_favicon_16_1744802431894.ico"/>
+
+
+<link rel="preconnect" href="https://irp.cdn-website.com"/>
+<link rel="preconnect" href="https://irp.cdn-website.com" crossorigin/>
+<link rel="preconnect" href="https://static.cdn-website.com"/>
+
+
+
+
+<script id='d-js-dmapi'>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}@media (min-width:768px) and (max-width:1024px){.responsiveTablet #dm .dmInner .hide-for-medium,[data-hidden-on-tablet]{display:none!important}}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto:wght@100;300;400;500;700;900&family=Montserrat:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/6858/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/80204bb0cb2a39939cb24d61f75de917.css" id="widgetCSS" />
+
+
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+
+<style>
+  body[data-page-alias="datenschutz720ef5f0"] #dm [data-show-on-page-only="datenschutz720ef5f0"] {
+    display: block !important;
+  }
+</style>
+
+
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/dc4867de/files/dc4867de_1.min.css?v=87" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly
+{
+	color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-style:normal !important;
+}
+*#dm *.dmBody div.dmforminput textarea
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.dmforminput *.fileUploadLink
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.checkboxwrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.radiowrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody nav.u_1144820115
+{
+	color:black !important;
+}
+*#dm *.dmBody nav.u_1673661366
+{
+	color:white !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1424121364
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:20.5px !important;
+	padding-left:40px !important;
+	padding-bottom:20.5px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-10, .size-10, .size-10 > font { font-size: 10px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}
+</style>
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.kindler-dach.de/datenschutz720ef5f0">
+
+  <title>
+    Datenschutz  Dachdecker Duisburg – Kindler Dach
+  </title>
+
+  <meta name="keywords" content="Thomas Kindler, Kindler, Duisburg, Dachdecker, Reisegewerbe, Kindler-Dach, Kindler dach, Kindler Dach Duisburg,"/>
+  <meta name="description" content="Professionelle Dacharbeiten in Duisburg - Dachsanierung, Reparatur und Neubau , PV Montage"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Datenschutz  Dachdecker Duisburg – Kindler Dach"/>
+  <meta name="twitter:description" content="Professionelle Dacharbeiten in Duisburg - Dachsanierung, Reparatur und Neubau , PV Montage"/>
+  <meta property="og:description" content="Professionelle Dacharbeiten in Duisburg - Dachsanierung, Reparatur und Neubau , PV Montage"/>
+  <meta property="og:title" content="Datenschutz  Dachdecker Duisburg – Kindler Dach"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="datenschutz720ef5f0"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations rows-1200 inMiniHeaderMode hasStickyHeader dmPageBody d-page-1716942098 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner" data-auto="page-inner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side"> <div class="u_1587288580 dmRespRow" style="text-align: center;" id="1587288580"> <div class="dmRespColsWrapper" id="1757744118"> <div class="u_1038612615 dmRespCol small-12 medium-12 large-12 empty-column" id="1038612615"></div> 
+</div> 
+</div> 
+ <div class="u_1578623661 dmRespRow middleDrawerRow" style="text-align: center;" id="1578623661"> <div class="dmRespColsWrapper" id="1936358594"> <div class="dmRespCol small-12 u_1189072515 medium-12 large-12" id="1189072515"> <nav class="u_1853364083 effect-bottom main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1853364083" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/galerie" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101572722  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Galerie
+        " data-auto="page-text-style">Galerie<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/jobs" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101502451  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Jobs
+        " data-auto="page-text-style">Jobs<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101542880  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/agb" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101159815  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         AGB
+        " data-auto="page-text-style">AGB<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1443246991" style="text-align: center;" id="1443246991"> <div class="dmRespColsWrapper" id="1190308428"> <div class="u_1645715243 dmRespCol small-12 medium-12 large-12" id="1645715243"> <div class="u_1157414424 dmNewParagraph" id="1157414424" style="transition: none;"><div style="text-align: left;"><span style=""><span style=""><font style="color: rgb(255, 255, 255);"><span style="" class="font-size-22 lh-1"><b style=""><span style="font-weight: 700;">Get in touch</span></b></span></font></span></span></div></div> <div class="u_1017093514 dmNewParagraph" id="1017093514" style="line-height:initial;" data-version="5"><p class="text-align-left size-18"><span class="font-size-18" style="font-weight: 400; color: rgb(255, 255, 255); display: initial;">555-555-5555</span></p><p class="text-align-left size-18"><span class="font-size-18" style="font-weight: 400; color: rgb(255, 255, 255); display: initial;">mymail@mailservice.com</span></p></div> <div class="u_1140381190 align-center text-align-center dmSocialHub gapSpacing" id="1140381190" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv " data-auto="social-hub-inner"> <a href="https://facebook.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://twitter.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Twitter&apos;)"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://youtube.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Youtube&apos;)"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header" data-scrollable-target="body" data-scroll-responder-id="hamburger-header"> <div class="u_1948746110 dmRespRow" style="text-align: center;" id="1948746110"> <div class="dmRespColsWrapper" id="1048297974"> <div class="dmRespCol small-12 u_1225225477 medium-6 large-6" id="1225225477"> <div class="u_1224046994 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1224046994"> <a href="/" id="1846151726" file="false"><img src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" id="1877326666" class="" data-dm-image-path="https://irp.cdn-website.com/dc4867de/dms3rep/multi/MediumSquareLogoohneHintergrund.png" width="400" height="400" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 medium-6 large-6" id="1987620531"> <a class="default align-center flexButton u_1986564292 button_2 dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:020394083070" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'dc4867de', this);" id="1986564292" dmle_extension="clicktocall" data-element-type="clicktocall" data-binding="W3siYmluZGluZ05hbWUiOiJwaG9uZSIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5waG9uZS44MDE2Nzg5MzQ2Mzk2MjMwNjMwIn1d" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Rufen Sie uns an" adwords="" icon-name="icon-phone" phone="020394083070" text="" image=""> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">Rufen Sie uns an</span> 
+</a> 
+ <a class="u_1541477892 default align-center flexButton button_2 dmEmail dmWidget dmNoMark dmWwr" href="mailto:kindler-dach@gmx.de" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToEmail', 'Email',null,'dc4867de', this);" id="1541477892" dmle_extension="emailextension" data-element-type="emailextension" data-binding="W3siYmluZGluZ05hbWUiOiJlbWFpbCIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5lbWFpbC41OTAwMDEwNSJ9XQ==" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Schreiben Sie uns" adwords="" icon-name="icon-envelope-alt" email="kindler-dach@gmx.de"> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-envelope-alt" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">Schreiben Sie uns</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" data-auto="layout-drawer-hamburger" aria-label="menu" aria-controls="hamburger-drawer" aria-expanded="false"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="7f3c1de367df47d5b45ab63d33101c7b===header" secondary-image="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" has-secondary-image="true" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" logo-size-target="80%" data-auto="header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1929059479 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode" style="text-align:center" id="1929059479"> <div class="dmRespColsWrapper" id="1267164208"> <div class="u_1276947771 small-12 dmRespCol large-2 medium-2" id="1276947771"> <div class="u_1300305891 imageWidget align-center" data-widget-type="image" id="1300305891" data-element-type="image"><img src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" id="1065504770" class="" data-dm-image-path="https://irp.cdn-website.com/dc4867de/dms3rep/multi/MediumSquareLogoohneHintergrund.png" width="400" height="400" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div class="u_1749524154 dmRespCol small-12 large-6 medium-6" id="1749524154"> <nav class="u_1607562870 effect-float main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="horizontal_nav_layout_2" layout-sub="submenu_horizontal_2" data-show-vertical-sub-items="HOVER" id="1607562870" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/galerie" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101572722  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Galerie
+        " data-auto="page-text-style">Galerie<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/jobs" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101502451  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Jobs
+        " data-auto="page-text-style">Jobs<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101542880  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/agb" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101159815  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         AGB
+        " data-auto="page-text-style">AGB<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1537738343 dmRespCol small-12 large-4 medium-4" id="1537738343"> <div class="dmRespRow" id="1204464144"> <div class="dmRespColsWrapper" id="1003759521"> <div class="dmRespCol small-12 medium-12 large-12" id="1568903437"> <a class="default align-center flexButton u_1600137522 button_2 dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:020394083070" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'dc4867de', this);" id="1600137522" dmle_extension="clicktocall" data-element-type="clicktocall" data-binding="W3siYmluZGluZ05hbWUiOiJwaG9uZSIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5waG9uZS44MDE2Nzg5MzQ2Mzk2MjMwNjMwIn1d" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Rufen Sie uns an" adwords="" icon-name="icon-phone" phone="020394083070" text="" image=""> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">Rufen Sie uns an</span> 
+</a> 
+ <a class="u_1659176394 default align-center flexButton button_2 dmEmail dmWidget dmNoMark dmWwr" href="mailto:kindler-dach@gmx.de" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToEmail', 'Email',null,'dc4867de', this);" id="1659176394" dmle_extension="emailextension" data-element-type="emailextension" data-binding="W3siYmluZGluZ05hbWUiOiJlbWFpbCIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5lbWFpbC41OTAwMDEwNSJ9XQ==" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Schreiben Sie uns" adwords="" icon-name="icon-envelope-alt" email="kindler-dach@gmx.de"> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-envelope-alt" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">Schreiben Sie uns</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-auto="sticky-header-spacer" data-new="true"></div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_datenschutz720ef5f0 dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper" data-auto="all-wrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="dmRespRow" id="1382658562"> <div class="dmRespColsWrapper" id="1769094340"> <div class="dmRespCol large-12 medium-12 small-12" id="1327431655"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1022935833" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-center size-18 m-size-14"><span style="display: unset; font-weight: bold; text-decoration: underline;" class="font-size-18 m-font-size-14">Datenschutzerkl&auml;rung</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1424121364 dmRespRow" id="1424121364"> <div class="dmRespColsWrapper" id="1313455546"> <div class="dmRespCol large-12 medium-12 small-12" id="1573683819"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1092228005" data-styletopreserve="{" background-image":""}"=""> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">1. Datenschutz auf einen Blick</span></h2> 
+ <h3 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Allgemeine Hinweise</span></h3> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO) sowie den weiteren anwendbaren Datenschutzbestimmungen.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Diese Datenschutzerkl&auml;rung informiert Sie dar&uuml;ber, welche personenbezogenen Daten beim Besuch unserer Website erhoben werden, zu welchem Zweck dies geschieht und welche Rechte Ihnen zustehen.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">2. Verantwortlicher</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Verantwortlich f&uuml;r die Datenverarbeitung auf dieser Website ist:</span></p><p class="size-10 m-size-8"><strong style="display: initial;" class="font-size-10 m-font-size-8">Thomas Kindler Dachdeckerfachbetrieb GmbH</strong></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Gesch&auml;ftsf&uuml;hrer: Thomas Kindler</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Kurtstra&szlig;e 32</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">47167 Duisburg</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Telefon: 0160 4633593</span></p><p class="size-10 m-size-8"><span class="font-size-10 m-font-size-8" style="display: initial;"><span style="display: initial;" class="font-size-10 m-font-size-8">E-Mail:</span> 
+</span><a href="mailto:kindler-dach@gmx.de" target="_blank" style="display: initial;" class="font-size-10 m-font-size-8">kindler-dach@gmx.de</a></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">3. Hosting</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Unsere Website wird bei der DomainFactory GmbH gehostet.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Zum Zweck des sicheren und zuverl&auml;ssigen Betriebs der Website verarbeitet der Hosting-Anbieter personenbezogene Daten (z. B. IP-Adressen, Server-Logfiles und technische Verbindungsdaten).</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht in der sicheren, stabilen und effizienten Bereitstellung unserer Website.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Mit dem Hosting-Anbieter wurde ein Vertrag zur Auftragsverarbeitung gem&auml;&szlig; Art. 28 DSGVO abgeschlossen.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">4. Server-Logfiles</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Beim Aufruf unserer Website werden automatisch folgende Informationen erfasst:</span></p> <ul class="defaultList bullet"><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">IP-Adresse</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Datum und Uhrzeit des Zugriffs</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Browsertyp und Browserversion</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Betriebssystem</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Referrer-URL</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">aufgerufene Seiten</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">&uuml;bertragene Datenmenge</span></li></ul> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Diese Daten dienen ausschlie&szlig;lich der Gew&auml;hrleistung eines st&ouml;rungsfreien Betriebs sowie der Verbesserung unseres Angebots.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">5. Cookies</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Unsere Website verwendet Cookies.</span></p><p class="size-10 m-size-8"><span class="font-size-10 m-font-size-8" style="display: initial;"><span style="display: initial;" class="font-size-10 m-font-size-8">Technisch notwendige Cookies (z. B.</span> 
+</span><strong style="display: initial;" class="font-size-10 m-font-size-8">JSESSIONID</strong><span style="display: initial;" class="font-size-10 m-font-size-8">) sind erforderlich, damit die Website ordnungsgem&auml;&szlig; funktioniert. Rechtsgrundlage hierf&uuml;r ist Art. 6 Abs. 1 lit. f DSGVO.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Soweit dar&uuml;ber hinaus Cookies eingesetzt werden, die nicht technisch erforderlich sind, erfolgt deren Speicherung ausschlie&szlig;lich nach Ihrer Einwilligung gem&auml;&szlig; Art. 6 Abs. 1 lit. a DSGVO.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Sie k&ouml;nnen Ihre Einwilligung jederzeit &uuml;ber die Cookie-Einstellungen widerrufen oder &auml;ndern.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">6. Kontaktformular</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Wenn Sie uns &uuml;ber das Kontaktformular kontaktieren, verarbeiten wir die von Ihnen eingegebenen Daten ausschlie&szlig;lich zur Bearbeitung Ihrer Anfrage.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Hierzu geh&ouml;ren insbesondere:</span></p> <ul class="defaultList bullet"><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Name</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">E-Mail-Adresse</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Telefonnummer (falls angegeben)</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Nachricht</span></li></ul> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Die Verarbeitung erfolgt je nach Inhalt Ihrer Anfrage auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Die Daten werden gel&ouml;scht, sobald die Bearbeitung abgeschlossen ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">7. Kontakt per E-Mail oder Telefon</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Wenn Sie uns per E-Mail oder telefonisch kontaktieren, speichern und verarbeiten wir Ihre Angaben ausschlie&szlig;lich zur Bearbeitung Ihres Anliegens.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bzw. Art. 6 Abs. 1 lit. f DSGVO.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">8. WhatsApp</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Auf unserer Website besteht die M&ouml;glichkeit, &uuml;ber WhatsApp mit uns Kontakt aufzunehmen.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Beim Anklicken des WhatsApp-Buttons wird eine Verbindung zu den Servern von WhatsApp hergestellt. Dabei k&ouml;nnen personenbezogene Daten (z. B. Ihre IP-Adresse oder weitere technische Informationen) an WhatsApp &uuml;bermittelt werden.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Weitere Informationen zur Datenverarbeitung finden Sie in der Datenschutzerkl&auml;rung von WhatsApp.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">9. Google Maps</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Zur Darstellung unseres Standorts verwenden wir Google Maps.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Beim Aufruf der Karte k&ouml;nnen personenbezogene Daten (insbesondere Ihre IP-Adresse) an Google &uuml;bermittelt werden.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Die Nutzung erfolgt auf Grundlage Ihrer Einwilligung gem&auml;&szlig; Art. 6 Abs. 1 lit. a DSGVO, sofern eine entsprechende Einwilligung &uuml;ber das Cookie-Banner eingeholt wird.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">10. Friendly Captcha</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Zum Schutz unserer Formulare vor Spam und missbr&auml;uchlichen automatisierten Anfragen verwenden wir Friendly Captcha.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Hierbei werden technische Daten verarbeitet, um zwischen menschlichen Nutzern und automatisierten Programmen zu unterscheiden.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO bzw. &ndash; sofern eine Einwilligung erforderlich ist &ndash; auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Weitere Informationen finden Sie in der Datenschutzerkl&auml;rung von Friendly Captcha.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">11. Facebook und Instagram</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Auf unserer Website befinden sich Links zu unseren Profilen bei Facebook und Instagram.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Beim blo&szlig;en Besuch unserer Website werden keine personenbezogenen Daten an diese Plattformen &uuml;bertragen.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Erst wenn Sie einen entsprechenden Link anklicken, verlassen Sie unsere Website und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">12. SSL-/TLS-Verschl&uuml;sselung</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Unsere Website nutzt aus Sicherheitsgr&uuml;nden eine SSL-/TLS-Verschl&uuml;sselung.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Dadurch werden alle Daten verschl&uuml;sselt &uuml;bertragen, die Sie &uuml;ber unsere Website an uns senden.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">13. Speicherdauer</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Wir speichern personenbezogene Daten nur so lange, wie dies f&uuml;r den jeweiligen Zweck erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Nach Wegfall des jeweiligen Zwecks werden die Daten gel&ouml;scht, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</span></p><p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">14. Ihre Rechte</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Sie haben jederzeit das Recht auf</span></p> <ul class="defaultList bullet"><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Auskunft &uuml;ber Ihre gespeicherten personenbezogenen Daten,</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Berichtigung unrichtiger Daten,</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">L&ouml;schung Ihrer Daten,</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Einschr&auml;nkung der Verarbeitung,</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Daten&uuml;bertragbarkeit,</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Widerruf einer erteilten Einwilligung mit Wirkung f&uuml;r die Zukunft,</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten,</span></li><li class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Beschwerde bei einer Datenschutzaufsichtsbeh&ouml;rde.</span></li></ul> 
+<p><br/></p> <h2 class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">15. &Auml;nderungen dieser Datenschutzerkl&auml;rung</span></h2> 
+<p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Wir behalten uns vor, diese Datenschutzerkl&auml;rung anzupassen, wenn dies aufgrund ge&auml;nderter gesetzlicher Vorgaben oder technischer &Auml;nderungen unserer Website erforderlich wird.</span></p><p class="size-10 m-size-8"><span style="display: initial;" class="font-size-10 m-font-size-8">Es gilt jeweils die zum Zeitpunkt Ihres Besuchs ver&ouml;ffentlichte Fassung.</span></p><p class="size-10 m-size-8"><span class="font-size-10 m-font-size-8" style="display: initial;">ausschlie&szlig;lich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); die Einwilligung ist jederzeit widerrufbar.</span></p><p class="m-size-8 size-10"><span class="font-size-10 m-font-size-8" style="display: initial;">Sie k&ouml;nnen Ihren Browser so einstellen, dass Sie &uuml;ber das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies f&uuml;r bestimmte F&auml;lle oder generell ausschlie&szlig;en sowie das automatische L&ouml;schen der Cookies beim Schlie&szlig;en des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalit&auml;t dieser Website eingeschr&auml;nkt sein.</span></p><p class="m-size-8 size-10"><span class="font-size-10 m-font-size-8" style="display: initial;">Soweit Cookies von Drittunternehmen oder zu Analysezwecken eingesetzt werden, werden wir Sie hier&uuml;ber im Rahmen dieser Datenschutzerkl&auml;rung gesondert informieren und ggf. eine Einwilligung abfragen.</span></p><p><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1390947199"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1632155419 dmRespRow" style="text-align: center;" id="1632155419"> <div class="dmRespColsWrapper" id="1253858808"> <div class="u_1063824722 dmRespCol small-12 large-6 medium-6" id="1063824722"> <div class="u_1944921932 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1944921932"> <a href="https://senioren.evd-ev.de/" id="1905606803" class="" target="_blank" file="false"><img src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/Partner+Logo+2025-2026-1920w.png" alt="Direkt zu den Füchse Duisburg" id="1158854950" class="" width="1920" height="960" data-dm-image-path="https://irp.cdn-website.com/dc4867de/dms3rep/multi/Partner+Logo+2025-2026.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <nav class="u_1973387440 effect-top-bottom main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1973387440" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="https://lirp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" alt="" data-nav-structure="SPLIT" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top left_nav " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/impressum" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="impressum"> <span class="nav-item-text " data-link-text="
+         Impressum
+        " data-auto="page-text-style">Impressum<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/datenschutz720ef5f0" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected    " target="" data-target-page-alias="datenschutz720ef5f0" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Datenschutz
+        " data-auto="page-text-style">Datenschutz<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+ <a class="middleLogoLink" href="/home" data-auto="nav-middle-logo-link"><img class="navLogo" id="navLogo" src="https://lirp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" alt="" data-auto="nav-logo" onerror="handleImageLoadError(this)"/></a> 
+ <ul role="menubar" class="unifiednav__container unav-top right_nav "> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/datenschutz720ef5f0" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected    " target="" data-target-page-alias="datenschutz720ef5f0" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Datenschutz
+        " data-auto="page-text-style">Datenschutz<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/agb" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="agb"> <span class="nav-item-text " data-link-text="
+         AGB
+        " data-auto="page-text-style">AGB<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1332161287 dmRespCol small-12 medium-6 large-6" id="1332161287"> <div class="u_1299492659 dmNewParagraph" data-element-type="paragraph" id="1299492659" style="transition: opacity 1s ease-in-out;" data-version="5"> <h5 class="text-align-left"><br/></h5> 
+ <h5 class="text-align-left"><span style="color: rgb(255, 255, 255); display: initial;"><span class="ql-cursor">﻿</span>Kontakt</span></h5> 
+</div> <div class="u_1521574249 dmNewParagraph" data-element-type="paragraph" id="1521574249" style="transition: none; display: block;" data-version="5"> <h6 class="text-align-left"><span style="display: initial; font-weight: 300; color: rgb(255, 255, 255);">Thomas Kindler Dachdeckerfachbetrieb GmbH</span></h6> 
+ <h6 class="text-align-left"><span style="display: initial; color: rgb(255, 255, 255);">Kurtstr.32</span></h6> 
+ <h6 class="text-align-left"><span style="display: initial; color: rgb(255, 255, 255);">47167 Duisburg</span></h6> 
+ <h6 class="text-align-left"><span style="display: initial;"><br/></span></h6> 
+ <h6 class="text-align-left"><span style="display: initial; color: rgb(255, 255, 255);">Email: Kindler-Dach@gmx.de<br/>Tele: 0203-94083070</span></h6> 
+ <h6 class="text-align-left"><span style="font-weight: normal; color: rgb(255, 255, 255); display: initial;"><br/></span></h6> 
+<p><span style="font-weight: normal; color: rgb(255, 255, 255); display: initial;">Registergericht: Amtsgericht Duisburg</span></p><p><span style="font-weight: normal; color: rgb(255, 255, 255); display: initial;">Handelsregister-Nr.: HRB 38980</span><span style="display: initial;"><br/></span></p></div> <div class="u_1532974712 align-center text-align-center dmSocialHub gapSpacing" id="1532974712" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv " data-auto="social-hub-inner"> <a href="mailto:kindler-dach@gmx.de" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://wa.me/00491604633593" target="_blank" dm_dont_rewrite_url="true" aria-label="whatsapp" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Whatsapp&apos;)"> <span class="dmSocialWhatsapp dm-social-icons-whatsapp oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="tel:+4920394083070" target="_blank" dm_dont_rewrite_url="true" aria-label="phone" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Phone&apos;)"> <span class="dmSocialPhone icon-phone oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://facebook.com/profile.php?id=61576222389463&amp;locale=de_DE" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="http://instagram.com/tk_dachdeckerfachbetrieb/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1106243893 widget-1f5975 dmCustomWidget" data-lazy-load="" data-title="" id="1106243893" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="25" data-widget-config="eyJyZXZlcnNlRmxhZyI6dHJ1ZSwiY29weXJpZ2h0VGV4dCI6IjxwIGNsYXNzPVwicnRlQmxvY2tcIj5BbGxlIFJlY2h0ZSB2b3JiZWhhbHRlbiB8IFRob21hcyBLaW5kbGVyIERhY2hkZWNrZXJmYWNoYmV0cmllYiBHbWJIPC9wPjxwIGNsYXNzPVwicnRlQmxvY2tcIj5XZWJzaXRlIERlc2lnbiBieSBNaWNoZWxsZSBLaW5kbGVyPC9wPjxicj48YnI+In0="> <div class="copyright"> <div><p class="rteBlock">Alle Rechte vorbehalten | Thomas Kindler Dachdeckerfachbetrieb GmbH</p><p class="rteBlock">Website Design by Michelle Kindler</p><br/><br/></div> 
+ <div>&nbsp;&copy; 2026</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+
+
+
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~25"] = function (element, data, api) {
+        null
+    };
+</script>
+
+
+<script type="text/javascript">
+
+    var d_version = "production_6858";
+    var build = "2026-10-14T12_50_34";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+
+
+
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+
+
+
+
+<!-- Injecting site-wide before scripts -->
+
+
+<script type="text/javascript" src="https://app.termly.io/resource-blocker/6056bc7a-b9cf-41ba-bbe0-f974fe09c3b8?autoBlock=on" data-swh-uuid="9fef080dfd0f4575b12166c01c67af93">
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" >
+    var _dm_gaq = {};
+    var _gaq = _gaq || [];
+    var _dm_insite = [];
+</script>
+
+
+
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+
+
+
+
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div> <p class=\"rteBlock\">Wir verwenden Cookies und &auml;hnliche Technologien, um den sicheren Betrieb unserer Website zu gew&auml;hrleisten und ausgew&auml;hlte Dienste wie Google Maps, Friendly Captcha sowie die Kontaktaufnahme &uuml;ber WhatsApp bereitzustellen. Mit Ihrer Einwilligung k&ouml;nnen diese Dienste aktiviert werden. Weitere Informationen finden Sie in unserer Datenschutzerkl&auml;rung.<\/p> \n<\/div> \n';
+</script>
+
+
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.build.dist.folder"] = 'production/6858';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/6858';
+    rtCommonProps["common.fonts.api.v2.url"] = 'https://irp.cdn-website.com/fonts/css2?family=';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://irp.cdn-website.com/';
+    rtCommonProps["feature.flag.performance.logs"] =false;
+    rtCommonProps["site.widget.form.captcha.type"] = 'friendly_captcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["termly.mapbox.consent.category"] = 'performance';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.repeatOrderRedirect.enabled"] = false;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.monolith.legacy.js.api.disabled.for.new.sites"] = false;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["runtime.lcp.preload.selfheal.enabled"] =true;
+    rtFlags["runtime.lcp.preload.bootstrap.enabled"] =true;
+    rtFlags["runtime.lcp.preload.monitor.enabled"] =true;
+    rtFlags["runtime.customwidget.heightpin.enabled"] =true;
+    rtFlags["runtime.customwidget.config.compare.enabled"] =false;
+    rtFlags["runtime.video.widget.lazy.enabled"] =true;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/6858/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://static.cdn-website.com/mnlt/production/6858/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+
+
+
+
+
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display:none;" id="P6iryBW0Wu"></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" data-auto="pswp-close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" data-auto="pswp-share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: dc4867de -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup" data-auto="popup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" data-auto="popup-close" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    </script>
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

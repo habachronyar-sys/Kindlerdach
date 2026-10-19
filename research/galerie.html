@@ -1,0 +1,3156 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.kindler-dach.de/',
+
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: 'dc4867de',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Jul 06, 2026',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'galerie',
+        InitialPageUuid: '12b1a50ba4b24aaf926d054af440b966',
+        InitialPageId: '1198203992',
+        InitialEncodedPageAlias: 'Z2FsZXJpZQ==',
+        InitialHeaderUuid: 'b59630b9bc614d769db2572c013b2ddc',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div> <p class=\"rteBlock\">Wir verwenden Cookies und &auml;hnliche Technologien, um den sicheren Betrieb unserer Website zu gew&auml;hrleisten und ausgew&auml;hlte Dienste wie Google Maps, Friendly Captcha sowie die Kontaktaufnahme &uuml;ber WhatsApp bereitzustellen. Mit Ihrer Einwilligung k&ouml;nnen diese Dienste aktiviert werden. Weitere Informationen finden Sie in unserer Datenschutzerkl&auml;rung.<\/p> \n<\/div> \n',
+        translatedPageUrl: '',
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        
+        mapConsent: {
+            message: 'Dieser Inhalt wird von einem Drittanbieter, {0}, bereitgestellt. Falls aktiviert, kann {0} Informationen \u00FCber Ihre Aktivit\u00E4ten sammeln.',
+            enable: 'Aktivieren'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'https://www.kindler-dach.de/',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        planID: '103',
+        disableTracking: true,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        isInPreview: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+
+
+
+
+<meta name="d-service-worker" content="register">
+
+
+
+<link rel="canonical" href="https://www.kindler-dach.de/galerie">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/dc4867de/site_favicon_16_1744802431894.ico"/>
+
+
+<link rel="preconnect" href="https://irp.cdn-website.com"/>
+<link rel="preconnect" href="https://irp.cdn-website.com" crossorigin/>
+<link rel="preconnect" href="https://static.cdn-website.com"/>
+
+
+
+
+<script id='d-js-dmapi'>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}@media (min-width:768px) and (max-width:1024px){.responsiveTablet #dm .dmInner .hide-for-medium,[data-hidden-on-tablet]{display:none!important}}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto:wght@100;300;400;500;700;900&family=Montserrat:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/6860/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/19166b449885f040b47483039fa6fba2.css" id="widgetCSS" />
+
+
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+
+<style>
+  body[data-page-alias="galerie"] #dm [data-show-on-page-only="galerie"] {
+    display: block !important;
+  }
+</style>
+
+
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/dc4867de/files/dc4867de_1.min.css?v=87" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody nav.u_1673661366
+{
+	color:white !important;
+}
+*#dm *.dmBody div.u_1866821281
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1084369655
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1309546703
+{
+	border-style:solid !important;
+	border-width:0 !important;
+}
+*#dm *.dmBody *.u_1309546703 .flex-direction-nav a
+{
+	width:24px !important;
+	overflow:visible !important;
+	height:24px !important;
+}
+*#dm *.dmBody *.u_1309546703 .flex-direction-nav a:before
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody *.u_1751254493 .flex-direction-nav a
+{
+	width:24px !important;
+	overflow:visible !important;
+	height:24px !important;
+}
+*#dm *.dmBody *.u_1751254493 .flex-direction-nav a:before
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody *.u_1032652080 .flex-direction-nav a
+{
+	width:24px !important;
+	overflow:visible !important;
+	height:24px !important;
+}
+*#dm *.dmBody *.u_1032652080 .flex-direction-nav a:before
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody *.u_1570672818 .flex-direction-nav a
+{
+	width:24px !important;
+	overflow:visible !important;
+	height:24px !important;
+}
+*#dm *.dmBody *.u_1570672818 .flex-direction-nav a:before
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody *.u_1438629397 .flex-direction-nav a
+{
+	width:24px !important;
+	overflow:visible !important;
+	height:24px !important;
+}
+*#dm *.dmBody *.u_1438629397 .flex-direction-nav a:before
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody *.u_1874620325 .flex-direction-nav a
+{
+	width:24px !important;
+	overflow:visible !important;
+	height:24px !important;
+}
+*#dm *.dmBody *.u_1874620325 .flex-direction-nav a:before
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody *.u_1412283774 .flex-direction-nav a
+{
+	width:24px !important;
+	overflow:visible !important;
+	height:24px !important;
+}
+*#dm *.dmBody *.u_1412283774 .flex-direction-nav a:before
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody *.u_1725983640 .flex-direction-nav a
+{
+	width:24px !important;
+	overflow:visible !important;
+	height:24px !important;
+}*#dm *.dmBody *.u_1725983640 .flex-direction-nav a:before { font-size:24px !important; }
+
+
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody div.caption-container *.caption-text *.rteBlock
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody div.u_1626062023
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:18px !important;
+	padding-left:40px !important;
+	padding-bottom:18px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1866821281
+{
+	padding-top:70px !important;
+	padding-bottom:70px !important;
+	margin-left:0 !important;
+	padding-left:40px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1084369655
+{
+	padding-top:70px !important;
+	padding-bottom:70px !important;
+	margin-left:0 !important;
+	padding-left:40px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1412283774
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:582px !important;
+	position:relative !important;
+	height:350px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1309546703
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:341px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1751254493
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:341px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:532px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1878168888
+{
+	margin-left:0 !important;
+	padding-top:15px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1032652080
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:340px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1229147853
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1570672818
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:335px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:16px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1775836924
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 472px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:256px !important;
+	margin-top:9px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1874620325
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 341px) !important;
+	position:relative !important;
+	height:395px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:518px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1317150498
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:459px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1584971610
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:350px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:46px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1438629397
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 107px) !important;
+	position:relative !important;
+	height:510px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	max-width:397px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+	important:true !important;
+	margin-left:107px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1725983640
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:352px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:34.4px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1564418775
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:351px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	min-height:auto !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:43.6094px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1822468953
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:350px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	min-height:auto !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:34.4062px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1100874575
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:350px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	min-height:auto !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:45.6094px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}
+</style>
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.kindler-dach.de/galerie">
+
+  <title>
+    Dachsanierung &amp; Reparatur Duisburg
+  </title>
+  <meta name="description" content="Als erfahrener Dachdecker in Duisburg bieten wir Dachsanierungen, Reparaturen und Neueindeckungen für private und gewerbliche Kunden an."/>
+
+  <meta name="keywords" content="Thomas Kindler, Kindler, Duisburg, Dachdecker, Reisegewerbe, Kindler-Dach, Kindler dach, Kindler Dach Duisburg,"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Dachsanierung &amp; Reparatur Duisburg"/>
+  <meta name="twitter:description" content="Als erfahrener Dachdecker in Duisburg bieten wir Dachsanierungen, Reparaturen und Neueindeckungen für private und gewerbliche Kunden an."/>
+  <meta property="og:description" content="Als erfahrener Dachdecker in Duisburg bieten wir Dachsanierungen, Reparaturen und Neueindeckungen für private und gewerbliche Kunden an."/>
+  <meta property="og:title" content="Dachsanierung &amp; Reparatur Duisburg"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="galerie"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite mac safariFix dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations rows-1200 inMiniHeaderMode hasStickyHeader dmPageBody d-page-1716942098 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner" data-auto="page-inner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side"> <div class="u_1587288580 dmRespRow" style="text-align: center;" id="1587288580"> <div class="dmRespColsWrapper" id="1757744118"> <div class="u_1038612615 dmRespCol small-12 medium-12 large-12 empty-column" id="1038612615"></div> 
+</div> 
+</div> 
+ <div class="u_1578623661 dmRespRow middleDrawerRow" style="text-align: center;" id="1578623661"> <div class="dmRespColsWrapper" id="1936358594"> <div class="dmRespCol small-12 u_1189072515 medium-12 large-12" id="1189072515"> <nav class="u_1853364083 effect-bottom main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1853364083" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/galerie" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected  dmUDNavigationItem_010101572722  " target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Galerie
+        " data-auto="page-text-style">Galerie<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/jobs" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101502451  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Jobs
+        " data-auto="page-text-style">Jobs<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101542880  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/agb" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101159815  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         AGB
+        " data-auto="page-text-style">AGB<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1443246991" style="text-align: center;" id="1443246991"> <div class="dmRespColsWrapper" id="1190308428"> <div class="u_1645715243 dmRespCol small-12 medium-12 large-12" id="1645715243"> <div class="u_1157414424 dmNewParagraph" id="1157414424" style="transition: none;"><div style="text-align: left;"><span style=""><span style=""><font style="color: rgb(255, 255, 255);"><span style="" class="font-size-22 lh-1"><b style=""><span style="font-weight: 700;">Get in touch</span></b></span></font></span></span></div></div> <div class="u_1017093514 dmNewParagraph" id="1017093514" style="line-height:initial;" data-version="5"><p class="text-align-left size-18"><span class="font-size-18" style="font-weight: 400; color: rgb(255, 255, 255); display: initial;">555-555-5555</span></p><p class="text-align-left size-18"><span class="font-size-18" style="font-weight: 400; color: rgb(255, 255, 255); display: initial;">mymail@mailservice.com</span></p></div> <div class="u_1140381190 align-center text-align-center dmSocialHub gapSpacing" id="1140381190" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv " data-auto="social-hub-inner"> <a href="https://facebook.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://twitter.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Twitter&apos;)"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://youtube.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Youtube&apos;)"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header" data-scrollable-target="body" data-scroll-responder-id="hamburger-header"> <div class="u_1948746110 dmRespRow" style="text-align: center;" id="1948746110"> <div class="dmRespColsWrapper" id="1048297974"> <div class="dmRespCol small-12 u_1225225477 medium-6 large-6" id="1225225477"> <div class="u_1224046994 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1224046994"> <a href="/" id="1846151726" file="false"><img src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" id="1877326666" class="" data-dm-image-path="https://irp.cdn-website.com/dc4867de/dms3rep/multi/MediumSquareLogoohneHintergrund.png" width="400" height="400" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 medium-6 large-6" id="1987620531"> <a class="default align-center flexButton u_1986564292 button_2 dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:020394083070" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'dc4867de', this);" id="1986564292" dmle_extension="clicktocall" data-element-type="clicktocall" data-binding="W3siYmluZGluZ05hbWUiOiJwaG9uZSIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5waG9uZS44MDE2Nzg5MzQ2Mzk2MjMwNjMwIn1d" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Rufen Sie uns an" adwords="" icon-name="icon-phone" phone="020394083070" text="" image=""> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">Rufen Sie uns an</span> 
+</a> 
+ <a class="u_1541477892 default align-center flexButton button_2 dmEmail dmWidget dmNoMark dmWwr" href="mailto:kindler-dach@gmx.de" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToEmail', 'Email',null,'dc4867de', this);" id="1541477892" dmle_extension="emailextension" data-element-type="emailextension" data-binding="W3siYmluZGluZ05hbWUiOiJlbWFpbCIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5lbWFpbC41OTAwMDEwNSJ9XQ==" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Schreiben Sie uns" adwords="" icon-name="icon-envelope-alt" email="kindler-dach@gmx.de"> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-envelope-alt" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">Schreiben Sie uns</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" data-auto="layout-drawer-hamburger" aria-label="menu" aria-controls="hamburger-drawer" aria-expanded="false"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="7f3c1de367df47d5b45ab63d33101c7b===header" secondary-image="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" has-secondary-image="true" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" logo-size-target="80%" data-auto="header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1929059479 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode" style="text-align:center" id="1929059479"> <div class="dmRespColsWrapper" id="1267164208"> <div class="u_1276947771 small-12 dmRespCol large-2 medium-2" id="1276947771"> <div class="u_1300305891 imageWidget align-center" data-widget-type="image" id="1300305891" data-element-type="image"><img src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" id="1065504770" class="" data-dm-image-path="https://irp.cdn-website.com/dc4867de/dms3rep/multi/MediumSquareLogoohneHintergrund.png" width="400" height="400" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div class="u_1749524154 dmRespCol small-12 large-6 medium-6" id="1749524154"> <nav class="u_1607562870 effect-float main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="horizontal_nav_layout_2" layout-sub="submenu_horizontal_2" data-show-vertical-sub-items="HOVER" id="1607562870" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/galerie" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected  dmUDNavigationItem_010101572722  " target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Galerie
+        " data-auto="page-text-style">Galerie<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/jobs" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101502451  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Jobs
+        " data-auto="page-text-style">Jobs<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101542880  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/agb" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101159815  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         AGB
+        " data-auto="page-text-style">AGB<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1537738343 dmRespCol small-12 large-4 medium-4" id="1537738343"> <div class="dmRespRow" id="1204464144"> <div class="dmRespColsWrapper" id="1003759521"> <div class="dmRespCol small-12 medium-12 large-12" id="1568903437"> <a class="default align-center flexButton u_1600137522 button_2 dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:020394083070" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'dc4867de', this);" id="1600137522" dmle_extension="clicktocall" data-element-type="clicktocall" data-binding="W3siYmluZGluZ05hbWUiOiJwaG9uZSIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5waG9uZS44MDE2Nzg5MzQ2Mzk2MjMwNjMwIn1d" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Rufen Sie uns an" adwords="" icon-name="icon-phone" phone="020394083070" text="" image=""> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">Rufen Sie uns an</span> 
+</a> 
+ <a class="u_1659176394 default align-center flexButton button_2 dmEmail dmWidget dmNoMark dmWwr" href="mailto:kindler-dach@gmx.de" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToEmail', 'Email',null,'dc4867de', this);" id="1659176394" dmle_extension="emailextension" data-element-type="emailextension" data-binding="W3siYmluZGluZ05hbWUiOiJlbWFpbCIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5lbWFpbC41OTAwMDEwNSJ9XQ==" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Schreiben Sie uns" adwords="" icon-name="icon-envelope-alt" email="kindler-dach@gmx.de"> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-envelope-alt" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">Schreiben Sie uns</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-auto="sticky-header-spacer" data-new="true"></div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_galerie dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper" data-auto="all-wrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="dmRespRow" id="1927309495"> <div class="dmRespColsWrapper" id="1319867567"> <div class="dmRespCol large-12 medium-12 small-12" id="1529681233"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1247874391" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-center size-24 m-size-19"><span style="display: unset; font-weight: bold; text-decoration: underline;" class="font-size-24 m-font-size-19">Galerie</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1878168888" id="1878168888"> <div class="dmRespColsWrapper" id="1155309974"> <div class="dmRespCol large-12 medium-12 small-12" id="1269352616"> <div class="dmRespRow" id="1449154883"> <div class="dmRespColsWrapper" id="1820551666"> <div class="dmRespCol large-6 medium-6 small-12" id="1328714842"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1715900586"><p class="text-align-center m-size-14 size-18"><span class="font-size-18 m-font-size-14" style="display: unset; font-weight: bold;">Flachdacharbeiten</span></p></div> 
+ <div class="u_1309546703 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1309546703"> <div class="flexslider ed-version arrows-visible nav-layout-1" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':false,'controlNav':false,'slideshowSpeed':4000,'animationDuration':600,'pausePlay':true,'pauseOnHover':true,'prevText':'','nextText':''}" id="1409339361" layout="empty"> <ul class="slides" id="1326319075"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1393732689"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131097-1920w.jpg" id="1959544778" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1022312280"></div> 
+ <div class="slide-inner" id="1656572897"> <div class="text-wrapper" id="1955289978"> <h3 class="slide-title" id="1088240078">Bildtitel</h3> 
+ <div class="slide-text richText" id="1686571578">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1475006276"> <span class="iconBg" id="1268736910"> <span class="icon hasFontIcon icon-star" id="1765962816"></span> 
+</span> 
+ <span class="text" id="1357622093">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1970205922"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672775934539-1920w.jpg" id="1486473504" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1693030105"></div> 
+ <div class="slide-inner" id="1524031650"> <div class="text-wrapper" id="1879142805"> <h3 class="slide-title" id="1153183705">Bildtitel</h3> 
+ <div class="slide-text richText" id="1627763924">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1036845986"> <span class="iconBg" id="1728064611"> <span class="icon hasFontIcon icon-star" id="1616762573"></span> 
+</span> 
+ <span class="text" id="1743816113">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1912617389"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131375-1920w.jpg" id="1819431041" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1134710100"></div> 
+ <div class="slide-inner" id="1165169263"> <div class="text-wrapper" id="1057809686"> <h3 class="slide-title" id="1663345027">Bildtitel</h3> 
+ <div class="slide-text richText" id="1253017729">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1765413949"> <span class="iconBg" id="1146093531"> <span class="icon hasFontIcon icon-star" id="1660762595"></span> 
+</span> 
+ <span class="text" id="1224067564">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1999537275"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672775268574-1920w.jpg" id="1954202460" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1678290064"></div> 
+ <div class="slide-inner" id="1796084890"> <div class="text-wrapper" id="1259068851"> <h3 class="slide-title" id="1070944248">Bildtitel</h3> 
+ <div class="slide-text richText" id="1093399068">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1359654131"> <span class="iconBg" id="1167617461"> <span class="icon hasFontIcon icon-star" id="1026430050"></span> 
+</span> 
+ <span class="text" id="1718431233">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1935043432"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131071-1920w.jpg" id="1144857920" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1115055745"></div> 
+ <div class="slide-inner" id="1766319552"> <div class="text-wrapper" id="1254757935"> <h3 class="slide-title" id="1953595296">Bildtitel</h3> 
+ <div class="slide-text richText" id="1997845997">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1658877064"> <span class="iconBg" id="1920569631"> <span class="icon hasFontIcon icon-star" id="1776794214"></span> 
+</span> 
+ <span class="text" id="1775539514">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1630734888"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131227-1920w.jpg" id="1603644277" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1512196866"></div> 
+ <div class="slide-inner" id="1670775785"> <div class="text-wrapper" id="1435061225"> <h3 class="slide-title" id="1135560814">Bildtitel</h3> 
+ <div class="slide-text richText" id="1254503920">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1552029899"> <span class="iconBg" id="1326022611"> <span class="icon hasFontIcon icon-star" id="1618506528"></span> 
+</span> 
+ <span class="text" id="1573812648">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1750284968"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131256-1920w.jpg" id="1387759752" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1537457871"></div> 
+ <div class="slide-inner" id="1429196065"> <div class="text-wrapper" id="1564543308"> <h3 class="slide-title" id="1022732087">Bildtitel</h3> 
+ <div class="slide-text richText" id="1442803314">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1582470607"> <span class="iconBg" id="1634706527"> <span class="icon hasFontIcon icon-star" id="1264840477"></span> 
+</span> 
+ <span class="text" id="1373336825">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1155410777"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131706-1920w.jpg" id="1222482402" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1623947853"></div> 
+ <div class="slide-inner" id="1920015407"> <div class="text-wrapper" id="1910077022"> <h3 class="slide-title" id="1289215827">Bildtitel</h3> 
+ <div class="slide-text richText" id="1860724034">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1397038763"> <span class="iconBg" id="1968622676"> <span class="icon hasFontIcon icon-star" id="1872582863"></span> 
+</span> 
+ <span class="text" id="1819691946">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1295195285"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0081-1920w.JPG" id="1803253082" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1031864766"></div> 
+ <div class="slide-inner" id="1870023558"> <div class="text-wrapper" id="1920703242"> <h3 class="slide-title" id="1719651355">Bildtitel</h3> 
+ <div class="slide-text richText" id="1780133725">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1465438538"> <span class="iconBg" id="1043496165"> <span class="icon hasFontIcon icon-star" id="1267952574"></span> 
+</span> 
+ <span class="text" id="1370520382">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1043429234"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131738-cdc0ee59-1920w.jpg" id="1124529570" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1520505334"></div> 
+ <div class="slide-inner" id="1414387350"> <div class="text-wrapper" id="1031748608"> <h3 class="slide-title" id="1257511302">Bildtitel</h3> 
+ <div class="slide-text richText" id="1578836726">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1964242106"> <span class="iconBg" id="1725442706"> <span class="icon hasFontIcon icon-star" id="1518312885"></span> 
+</span> 
+ <span class="text" id="1309469241">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1053770681"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131678-1920w.jpg" id="1535668383" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1618323085"></div> 
+ <div class="slide-inner" id="1347345749"> <div class="text-wrapper" id="1723025323"> <h3 class="slide-title" id="1497019901">Bildtitel</h3> 
+ <div class="slide-text richText" id="1767675822">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1432365243"> <span class="iconBg" id="1004021686"> <span class="icon hasFontIcon icon-star" id="1275449821"></span> 
+</span> 
+ <span class="text" id="1854968155">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1750840344"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093130796-1920w.jpg" id="1223460023" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1376048166"></div> 
+ <div class="slide-inner" id="1952065280"> <div class="text-wrapper" id="1580545937"> <h3 class="slide-title" id="1300178918">Bildtitel</h3> 
+ <div class="slide-text richText" id="1484063987">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1430190780"> <span class="iconBg" id="1877468055"> <span class="icon hasFontIcon icon-star" id="1908896743"></span> 
+</span> 
+ <span class="text" id="1092959755">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1740623636"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093130777-1920w.jpg" id="1116425305" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1880069862"></div> 
+ <div class="slide-inner" id="1129417562"> <div class="text-wrapper" id="1059767988"> <h3 class="slide-title" id="1421763186">Bildtitel</h3> 
+ <div class="slide-text richText" id="1063557903">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1338373931"> <span class="iconBg" id="1890037945"> <span class="icon hasFontIcon icon-star" id="1707927311"></span> 
+</span> 
+ <span class="text" id="1463235392">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1373009392"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093130971-1920w.jpg" id="1117224799" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1079319251"></div> 
+ <div class="slide-inner" id="1071814789"> <div class="text-wrapper" id="1503378317"> <h3 class="slide-title" id="1678602878">Bildtitel</h3> 
+ <div class="slide-text richText" id="1594687517">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1341658425"> <span class="iconBg" id="1158153086"> <span class="icon hasFontIcon icon-star" id="1242819556"></span> 
+</span> 
+ <span class="text" id="1132607781">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1689451016"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131349-bde3af19-1920w.jpg" id="1704854540" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1797762651"></div> 
+ <div class="slide-inner" id="1293949786"> <div class="text-wrapper" id="1520844598"> <h3 class="slide-title" id="1391357279">Bildtitel</h3> 
+ <div class="slide-text richText" id="1767717666">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1756556727"> <span class="iconBg" id="1114760667"> <span class="icon hasFontIcon icon-star" id="1583343118"></span> 
+</span> 
+ <span class="text" id="1022681160">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1981459970"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131533-1920w.jpg" id="1531838422" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1101249531"></div> 
+ <div class="slide-inner" id="1447063074"> <div class="text-wrapper" id="1380533464"> <h3 class="slide-title" id="1977562117">Bildtitel</h3> 
+ <div class="slide-text richText" id="1626047149">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1110432470"> <span class="iconBg" id="1845106836"> <span class="icon hasFontIcon icon-star" id="1206599912"></span> 
+</span> 
+ <span class="text" id="1919566237">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1848100730"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649502960844-1920w.jpg" id="1078159252" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1579737092"></div> 
+ <div class="slide-inner" id="1503925678"> <div class="text-wrapper" id="1525728535"> <h3 class="slide-title" id="1086597784">Bildtitel</h3> 
+ <div class="slide-text richText" id="1312865505">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1832858735"> <span class="iconBg" id="1841007892"> <span class="icon hasFontIcon icon-star" id="1037777693"></span> 
+</span> 
+ <span class="text" id="1239208706">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12" id="1059544984"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1563897897"><p class="text-align-center size-18 m-size-14"><span class="font-size-18 m-font-size-14" style="font-weight: bold; display: initial;" m-font-size-set="true">Schieferarbeiten</span></p></div> 
+ <div class="u_1751254493 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1751254493"> <div class="flexslider ed-version arrows-visible" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':false,'controlNav':false,'slideshowSpeed':5000,'animationDuration':600,'pausePlay':true,'pauseOnHover':true,'prevText':'','nextText':''}" id="1414346170" layout="empty"> <ul class="slides" id="1773851467"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1845020426"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131588-1920w.jpg" id="1416584216" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1976854065"></div> 
+ <div class="slide-inner" id="1058026116"> <div class="text-wrapper" id="1482787138"> <h3 class="slide-title" id="1643345236">Bildtitel</h3> 
+ <div class="slide-text richText" id="1975952711">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1639398535"> <span class="iconBg" id="1824409543"> <span class="icon hasFontIcon icon-star" id="1336517914"></span> 
+</span> 
+ <span class="text" id="1123484540">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1880406641"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672775989257-1920w.jpg" id="1447899798" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1789044302"></div> 
+ <div class="slide-inner" id="1912968649"> <div class="text-wrapper" id="1780353561"> <h3 class="slide-title" id="1378561810">Bildtitel</h3> 
+ <div class="slide-text richText" id="1874059468">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1273807141"> <span class="iconBg" id="1645532210"> <span class="icon hasFontIcon icon-star" id="1869860430"></span> 
+</span> 
+ <span class="text" id="1510172364">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1320094759"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672775739923-1920w.jpeg" id="1125762066" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1831978902"></div> 
+ <div class="slide-inner" id="1949617264"> <div class="text-wrapper" id="1672278311"> <h3 class="slide-title" id="1308089684">Bildtitel</h3> 
+ <div class="slide-text richText" id="1979108441">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1785782440"> <span class="iconBg" id="1244383765"> <span class="icon hasFontIcon icon-star" id="1321727968"></span> 
+</span> 
+ <span class="text" id="1453775492">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1565662926"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131559-1920w.jpg" id="1480116534" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1155373458"></div> 
+ <div class="slide-inner" id="1079183500"> <div class="text-wrapper" id="1555989811"> <h3 class="slide-title" id="1828476444">Bildtitel</h3> 
+ <div class="slide-text richText" id="1025432165">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1373841115"> <span class="iconBg" id="1141234938"> <span class="icon hasFontIcon icon-star" id="1672402778"></span> 
+</span> 
+ <span class="text" id="1974333306">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1662194912"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0085-1920w.JPG" id="1399059622" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1162074503"></div> 
+ <div class="slide-inner" id="1805868066"> <div class="text-wrapper" id="1896615854"> <h3 class="slide-title" id="1126693546">Bildtitel</h3> 
+ <div class="slide-text richText" id="1871946663">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1541964048"> <span class="iconBg" id="1467041021"> <span class="icon hasFontIcon icon-star" id="1219994042"></span> 
+</span> 
+ <span class="text" id="1693712821">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1818912600"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649502960739-1920w.jpg" id="1081192202" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1120348568"></div> 
+ <div class="slide-inner" id="1310778699"> <div class="text-wrapper" id="1795363209"> <h3 class="slide-title" id="1622177257">Bildtitel</h3> 
+ <div class="slide-text richText" id="1809517996">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1058698089"> <span class="iconBg" id="1435119061"> <span class="icon hasFontIcon icon-star" id="1951031171"></span> 
+</span> 
+ <span class="text" id="1971672672">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1536687650"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131657-1920w.jpg" id="1927452516" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1209349228"></div> 
+ <div class="slide-inner" id="1274232191"> <div class="text-wrapper" id="1895129519"> <h3 class="slide-title" id="1129500825">Bildtitel</h3> 
+ <div class="slide-text richText" id="1860047050">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1359491096"> <span class="iconBg" id="1498971465"> <span class="icon hasFontIcon icon-star" id="1359137391"></span> 
+</span> 
+ <span class="text" id="1988440186">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1037096133"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131201-1920w.jpg" id="1502631751" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1941275312"></div> 
+ <div class="slide-inner" id="1943842434"> <div class="text-wrapper" id="1700716654"> <h3 class="slide-title" id="1413698791">Bildtitel</h3> 
+ <div class="slide-text richText" id="1752906754">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1536753682"> <span class="iconBg" id="1967298681"> <span class="icon hasFontIcon icon-star" id="1673357191"></span> 
+</span> 
+ <span class="text" id="1630248818">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1626062023 dmRespRow" id="1626062023"> <div class="dmRespColsWrapper" id="1493003971"> <div class="dmRespCol small-12 large-6 medium-6" id="1916066671"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1061190805" data-styletopreserve="{" background-image":""}"=""><p class="m-size-14 text-align-center size-18"><span class="m-font-size-14 font-size-18" style="font-weight: bold; display: unset;">Dachfenster</span></p></div> 
+ <div class="u_1032652080 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1032652080"> <div class="flexslider ed-version arrows-visible" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':false,'controlNav':false,'slideshowSpeed':5000,'animationDuration':600,'pausePlay':true,'pauseOnHover':true,'prevText':'','nextText':''}" id="1732323626" layout="empty"> <ul class="slides" id="1331837332"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1810193132"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672773812090-1920w.jpg" id="1821295084" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1325905392"></div> 
+ <div class="slide-inner" id="1190963933"> <div class="text-wrapper" id="1595614754"> <h3 class="slide-title" id="1874130018">Bildtitel</h3> 
+ <div class="slide-text richText" id="1586721701">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1429527639"> <span class="iconBg" id="1851832415"> <span class="icon hasFontIcon icon-star" id="1516279450"></span> 
+</span> 
+ <span class="text" id="1480605970">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1597798307"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672773812108-1920w.jpg" id="1747230799" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1723165581"></div> 
+ <div class="slide-inner" id="1093840093"> <div class="text-wrapper" id="1908248676"> <h3 class="slide-title" id="1475484195">Bildtitel</h3> 
+ <div class="slide-text richText" id="1451194423">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1246279328"> <span class="iconBg" id="1666828730"> <span class="icon hasFontIcon icon-star" id="1288376706"></span> 
+</span> 
+ <span class="text" id="1930475864">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1572733112"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672773812117-1920w.jpg" id="1524532551" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1864957532"></div> 
+ <div class="slide-inner" id="1610452401"> <div class="text-wrapper" id="1236884310"> <h3 class="slide-title" id="1069167999">Bildtitel</h3> 
+ <div class="slide-text richText" id="1436070125">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1684687274"> <span class="iconBg" id="1974097739"> <span class="icon hasFontIcon icon-star" id="1982382545"></span> 
+</span> 
+ <span class="text" id="1777162075">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1141665892"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672773812126-1920w.jpg" id="1312965621" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1879207027"></div> 
+ <div class="slide-inner" id="1805294349"> <div class="text-wrapper" id="1248341837"> <h3 class="slide-title" id="1237317915">Bildtitel</h3> 
+ <div class="slide-text richText" id="1177364082">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1033617908"> <span class="iconBg" id="1102234029"> <span class="icon hasFontIcon icon-star" id="1171739197"></span> 
+</span> 
+ <span class="text" id="1258623991">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1046022753"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672773812098-1920w.jpg" id="1081959597" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1806497438"></div> 
+ <div class="slide-inner" id="1941826007"> <div class="text-wrapper" id="1843799066"> <h3 class="slide-title" id="1310342154">Bildtitel</h3> 
+ <div class="slide-text richText" id="1888766620">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1436612840"> <span class="iconBg" id="1870758487"> <span class="icon hasFontIcon icon-star" id="1010656030"></span> 
+</span> 
+ <span class="text" id="1383033840">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1971489850"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093130849-1920w.jpg" id="1084542141" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1806996810"></div> 
+ <div class="slide-inner" id="1998050485"> <div class="text-wrapper" id="1502493192"> <h3 class="slide-title" id="1036843366">Bildtitel</h3> 
+ <div class="slide-text richText" id="1411640461">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1693043737"> <span class="iconBg" id="1383319695"> <span class="icon hasFontIcon icon-star" id="1128847848"></span> 
+</span> 
+ <span class="text" id="1573720359">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1133410420"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131397-1920w.jpg" id="1479064799" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1260220721"></div> 
+ <div class="slide-inner" id="1832867377"> <div class="text-wrapper" id="1296627016"> <h3 class="slide-title" id="1194441625">Bildtitel</h3> 
+ <div class="slide-text richText" id="1121207020">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1133366164"> <span class="iconBg" id="1834873444"> <span class="icon hasFontIcon icon-star" id="1862776444"></span> 
+</span> 
+ <span class="text" id="1023456396">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1815313552"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093130994-1920w.jpg" id="1255289110" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1434342735"></div> 
+ <div class="slide-inner" id="1699194581"> <div class="text-wrapper" id="1560420134"> <h3 class="slide-title" id="1607122785">Bildtitel</h3> 
+ <div class="slide-text richText" id="1331963172">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1486456399"> <span class="iconBg" id="1464974232"> <span class="icon hasFontIcon icon-star" id="1138986263"></span> 
+</span> 
+ <span class="text" id="1889331064">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1497284009"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650046781863-1920w.jpg" id="1292389929" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1559553455"></div> 
+ <div class="slide-inner" id="1891704183"> <div class="text-wrapper" id="1916518555"> <h3 class="slide-title" id="1726588718">Bildtitel</h3> 
+ <div class="slide-text richText" id="1366897185">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1917235408"> <span class="iconBg" id="1559378958"> <span class="icon hasFontIcon icon-star" id="1859919819"></span> 
+</span> 
+ <span class="text" id="1937548963">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1908797364"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131453-1920w.jpg" id="1980931732" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1201054788"></div> 
+ <div class="slide-inner" id="1787260470"> <div class="text-wrapper" id="1371101634"> <h3 class="slide-title" id="1367779769">Bildtitel</h3> 
+ <div class="slide-text richText" id="1361876027">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1469495037"> <span class="iconBg" id="1497041016"> <span class="icon hasFontIcon icon-star" id="1706832523"></span> 
+</span> 
+ <span class="text" id="1655380659">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1468066376"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131426-1920w.jpg" id="1292555111" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1170982405"></div> 
+ <div class="slide-inner" id="1410735389"> <div class="text-wrapper" id="1222386375"> <h3 class="slide-title" id="1620519542">Bildtitel</h3> 
+ <div class="slide-text richText" id="1761558640">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1025282408"> <span class="iconBg" id="1701443754"> <span class="icon hasFontIcon icon-star" id="1449968734"></span> 
+</span> 
+ <span class="text" id="1037618032">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1539935030"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093130870-1920w.jpg" id="1483019142" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1054135205"></div> 
+ <div class="slide-inner" id="1105430844"> <div class="text-wrapper" id="1910444359"> <h3 class="slide-title" id="1430312653">Bildtitel</h3> 
+ <div class="slide-text richText" id="1470710458">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1945858516"> <span class="iconBg" id="1996367667"> <span class="icon hasFontIcon icon-star" id="1735229602"></span> 
+</span> 
+ <span class="text" id="1730187059">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1074294911" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-14 text-align-center size-18"><span class="m-font-size-14 font-size-18" style="font-weight: bold; display: unset;">Sonstiges</span></p></div> 
+ <div class="u_1438629397 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1438629397"> <div class="flexslider ed-version arrows-visible nav-layout-1" sliderscriptparams="{'stretch':false,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':false,'controlNav':false,'slideshowSpeed':7000,'animationDuration':600,'pausePlay':true,'pauseOnHover':true,'prevText':'','nextText':''}" id="1250354827" layout="empty"> <ul class="slides" id="1873909627"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1664766547"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/20241216_115824-1920w.jpg" id="1661620197" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1645792315"></div> 
+ <div class="slide-inner" id="1524374463"> <div class="text-wrapper" id="1757734617"> <h3 class="slide-title" id="1862294746">Bildtitel</h3> 
+ <div class="slide-text richText" id="1459425565">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1164948336"> <span class="iconBg" id="1358162288"> <span class="icon hasFontIcon icon-star" id="1508725379"></span> 
+</span> 
+ <span class="text" id="1444750976">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1896786633"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/20241210_101031-1920w.jpg" id="1653203826" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1181880801"></div> 
+ <div class="slide-inner" id="1150048799"> <div class="text-wrapper" id="1009256499"> <h3 class="slide-title" id="1127455800">Bildtitel</h3> 
+ <div class="slide-text richText" id="1329355773">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1683494145"> <span class="iconBg" id="1786020742"> <span class="icon hasFontIcon icon-star" id="1629818688"></span> 
+</span> 
+ <span class="text" id="1962185170">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1986334527"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/20250222_133257-1920w.jpg" id="1380131519" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1101510292"></div> 
+ <div class="slide-inner" id="1207237001"> <div class="text-wrapper" id="1818219934"> <h3 class="slide-title" id="1575453657">Bildtitel</h3> 
+ <div class="slide-text richText" id="1022116541">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1677635754"> <span class="iconBg" id="1775054160"> <span class="icon hasFontIcon icon-star" id="1900411956"></span> 
+</span> 
+ <span class="text" id="1780719873">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1123322000"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650908700629-1920w.jpg" id="1819947881" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1344127097"></div> 
+ <div class="slide-inner" id="1165750504"> <div class="text-wrapper" id="1488376376"> <h3 class="slide-title" id="1078727714">Bildtitel</h3> 
+ <div class="slide-text richText" id="1938740661">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1696786329"> <span class="iconBg" id="1450368779"> <span class="icon hasFontIcon icon-star" id="1597883835"></span> 
+</span> 
+ <span class="text" id="1067526776">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1035124144"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672776081356-1920w.jpg" id="1627413261" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1845508961"></div> 
+ <div class="slide-inner" id="1517234739"> <div class="text-wrapper" id="1981904310"> <h3 class="slide-title" id="1227650307">Bildtitel</h3> 
+ <div class="slide-text richText" id="1639416992">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1204790362"> <span class="iconBg" id="1149727020"> <span class="icon hasFontIcon icon-star" id="1910211625"></span> 
+</span> 
+ <span class="text" id="1195003539">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1236595592"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672776081346-1920w.jpg" id="1232032908" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1863581121"></div> 
+ <div class="slide-inner" id="1983274187"> <div class="text-wrapper" id="1832657066"> <h3 class="slide-title" id="1727474326">Bildtitel</h3> 
+ <div class="slide-text richText" id="1443782106">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1412538724"> <span class="iconBg" id="1842329828"> <span class="icon hasFontIcon icon-star" id="1172120883"></span> 
+</span> 
+ <span class="text" id="1917789596">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1265081449"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672774604171-1920w.jpg" id="1003809422" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1849299096"></div> 
+ <div class="slide-inner" id="1759180859"> <div class="text-wrapper" id="1137168804"> <h3 class="slide-title" id="1351227372">Bildtitel</h3> 
+ <div class="slide-text richText" id="1159079366">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1478617966"> <span class="iconBg" id="1744872351"> <span class="icon hasFontIcon icon-star" id="1794002115"></span> 
+</span> 
+ <span class="text" id="1059137976">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1038346415"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672774868560-1920w.jpg" id="1493342427" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1302227589"></div> 
+ <div class="slide-inner" id="1271850409"> <div class="text-wrapper" id="1966703592"> <h3 class="slide-title" id="1809238200">Bildtitel</h3> 
+ <div class="slide-text richText" id="1938966270">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1397578890"> <span class="iconBg" id="1706954516"> <span class="icon hasFontIcon icon-star" id="1491574502"></span> 
+</span> 
+ <span class="text" id="1198275023">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1631899073"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672774943416-1920w.jpg" id="1563194500" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1378633140"></div> 
+ <div class="slide-inner" id="1032229295"> <div class="text-wrapper" id="1999333867"> <h3 class="slide-title" id="1741945036">Bildtitel</h3> 
+ <div class="slide-text richText" id="1234152953">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1039901282"> <span class="iconBg" id="1794472331"> <span class="icon hasFontIcon icon-star" id="1134456996"></span> 
+</span> 
+ <span class="text" id="1002326480">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1256567837"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672775101242-1920w.jpg" id="1213040072" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1161734781"></div> 
+ <div class="slide-inner" id="1667908833"> <div class="text-wrapper" id="1393785136"> <h3 class="slide-title" id="1838338504">Bildtitel</h3> 
+ <div class="slide-text richText" id="1873373725">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1140726610"> <span class="iconBg" id="1565242806"> <span class="icon hasFontIcon icon-star" id="1491404146"></span> 
+</span> 
+ <span class="text" id="1306749445">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1073571535"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131148-1920w.jpg" id="1031415341" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1191680747"></div> 
+ <div class="slide-inner" id="1290892370"> <div class="text-wrapper" id="1246345710"> <h3 class="slide-title" id="1589740263">Bildtitel</h3> 
+ <div class="slide-text richText" id="1186488564">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1313551577"> <span class="iconBg" id="1931705157"> <span class="icon hasFontIcon icon-star" id="1070956031"></span> 
+</span> 
+ <span class="text" id="1357837395">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1171270378"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649502960806-1920w.jpg" id="1523386335" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1952474150"></div> 
+ <div class="slide-inner" id="1820718645"> <div class="text-wrapper" id="1982503981"> <h3 class="slide-title" id="1892049032">Bildtitel</h3> 
+ <div class="slide-text richText" id="1405126297">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1700146784"> <span class="iconBg" id="1554241172"> <span class="icon hasFontIcon icon-star" id="1023924762"></span> 
+</span> 
+ <span class="text" id="1344632496">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1480049886"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649502960825-1920w.jpg" id="1955210185" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1966354101"></div> 
+ <div class="slide-inner" id="1663879312"> <div class="text-wrapper" id="1372566620"> <h3 class="slide-title" id="1380148902">Bildtitel</h3> 
+ <div class="slide-text richText" id="1240173037">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1437515466"> <span class="iconBg" id="1740275226"> <span class="icon hasFontIcon icon-star" id="1363530579"></span> 
+</span> 
+ <span class="text" id="1977151498">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1641555506"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131780-1920w.jpg" id="1276145737" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1776614826"></div> 
+ <div class="slide-inner" id="1282905587"> <div class="text-wrapper" id="1242594330"> <h3 class="slide-title" id="1228325945">Bildtitel</h3> 
+ <div class="slide-text richText" id="1719643054">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1977408791"> <span class="iconBg" id="1135057824"> <span class="icon hasFontIcon icon-star" id="1410186514"></span> 
+</span> 
+ <span class="text" id="1129669999">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1468250967"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131757-1920w.jpg" id="1543802898" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1701010076"></div> 
+ <div class="slide-inner" id="1998055657"> <div class="text-wrapper" id="1172594257"> <h3 class="slide-title" id="1396835481">Bildtitel</h3> 
+ <div class="slide-text richText" id="1539813080">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1962044903"> <span class="iconBg" id="1436972732"> <span class="icon hasFontIcon icon-star" id="1134856848"></span> 
+</span> 
+ <span class="text" id="1908262012">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1228388243"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649502960773-1920w.jpg" id="1238704833" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1761157721"></div> 
+ <div class="slide-inner" id="1408545275"> <div class="text-wrapper" id="1232635198"> <h3 class="slide-title" id="1245353605">Bildtitel</h3> 
+ <div class="slide-text richText" id="1598390957">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1734698670"> <span class="iconBg" id="1328916273"> <span class="icon hasFontIcon icon-star" id="1746710013"></span> 
+</span> 
+ <span class="text" id="1232318709">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1949781052"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131608-1920w.jpg" id="1897291192" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1639934307"></div> 
+ <div class="slide-inner" id="1581964134"> <div class="text-wrapper" id="1316148930"> <h3 class="slide-title" id="1830501817">Bildtitel</h3> 
+ <div class="slide-text richText" id="1051678028">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1660896569"> <span class="iconBg" id="1070840555"> <span class="icon hasFontIcon icon-star" id="1075173831"></span> 
+</span> 
+ <span class="text" id="1910486195">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1298478785"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131324-1920w.jpg" id="1305955133" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1880392579"></div> 
+ <div class="slide-inner" id="1796425715"> <div class="text-wrapper" id="1946149229"> <h3 class="slide-title" id="1377453496">Bildtitel</h3> 
+ <div class="slide-text richText" id="1028769815">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1126053131"> <span class="iconBg" id="1986847216"> <span class="icon hasFontIcon icon-star" id="1024360840"></span> 
+</span> 
+ <span class="text" id="1828087340">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1965608412"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131295-1920w.jpg" id="1244614903" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1928946891"></div> 
+ <div class="slide-inner" id="1307528969"> <div class="text-wrapper" id="1291019583"> <h3 class="slide-title" id="1257231180">Bildtitel</h3> 
+ <div class="slide-text richText" id="1669160861">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1514572090"> <span class="iconBg" id="1884315819"> <span class="icon hasFontIcon icon-star" id="1097067964"></span> 
+</span> 
+ <span class="text" id="1827963046">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12" id="1287897257"> <div class="dmNewParagraph u_1229147853" data-element-type="paragraph" data-version="5" id="1229147853" data-styletopreserve="{" background-image":""}"=""><p class="m-size-14 text-align-center size-18" style="line-height: initial;"><span class="m-font-size-14 font-size-18" style="display: unset; font-weight: bold;">Wand und Kaminbekleidungen</span><span style="display: initial;"><br/></span></p></div> 
+ <div class="u_1570672818 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1570672818"> <div class="flexslider ed-version arrows-visible" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':true,'controlNav':false,'slideshowSpeed':7000,'animationDuration':600,'pausePlay':true,'prevText':'','nextText':''}" id="1415811621" layout="empty"> <ul class="slides" id="1448373891"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1643878234"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650048401088-1920w.jpg" id="1974155118" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1190375749"></div> 
+ <div class="slide-inner" id="1758333529"> <div class="text-wrapper" id="1864609891"> <h3 class="slide-title" id="1412892520">Bildtitel</h3> 
+ <div class="slide-text richText" id="1411479779">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1630615002"> <span class="iconBg" id="1956100692"> <span class="icon hasFontIcon icon-star" id="1761980371"></span> 
+</span> 
+ <span class="text" id="1896999134">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1626209254"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131043-75a8e292-1920w.jpg" id="1510859650" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1123959106"></div> 
+ <div class="slide-inner" id="1574653719"> <div class="text-wrapper" id="1724115632"> <h3 class="slide-title" id="1833614800">Bildtitel</h3> 
+ <div class="slide-text richText" id="1636358213">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1417543661"> <span class="iconBg" id="1113281201"> <span class="icon hasFontIcon icon-star" id="1840166929"></span> 
+</span> 
+ <span class="text" id="1257589543">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1329959993"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0055-1920w.JPG" id="1035747502" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1864760684"></div> 
+ <div class="slide-inner" id="1454203370"> <div class="text-wrapper" id="1271873403"> <h3 class="slide-title" id="1015765897">Bildtitel</h3> 
+ <div class="slide-text richText" id="1000388393">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1666880969"> <span class="iconBg" id="1517053113"> <span class="icon hasFontIcon icon-star" id="1721250913"></span> 
+</span> 
+ <span class="text" id="1322145786">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1465780629"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093130946-1920w.jpg" id="1609486728" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1489399957"></div> 
+ <div class="slide-inner" id="1069737973"> <div class="text-wrapper" id="1635735777"> <h3 class="slide-title" id="1883062970">Bildtitel</h3> 
+ <div class="slide-text richText" id="1042535781">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1621815592"> <span class="iconBg" id="1544525728"> <span class="icon hasFontIcon icon-star" id="1655002994"></span> 
+</span> 
+ <span class="text" id="1057062020">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1866821281" id="1866821281" data-anchor="Children"> <div class="dmRespColsWrapper" id="1081329877"> <div class="dmRespCol small-12 medium-12 large-12" id="1927515187"> <div class="dmNewParagraph u_1775836924" data-element-type="paragraph" data-version="5" id="1775836924" style="transition: none 0s ease 0s; text-align: left; display: block;"><p class="m-size-14 text-align-center size-20"><span class="m-font-size-14 font-size-20" m-font-size-set="true" style="font-weight: bold; display: initial; text-decoration: underline;">Neubau</span></p></div> 
+ <div class="u_1874620325 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1874620325"> <div class="flexslider ed-version arrows-visible" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':true,'controlNav':false,'slideshowSpeed':7000,'animationDuration':600,'pausePlay':true,'prevText':'','nextText':''}" id="1724259806" layout="empty"> <ul class="slides" id="1762279403"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1989998792"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0194-1920w.JPG" id="1920931001" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1815283202"></div> 
+ <div class="slide-inner" id="1128322814"> <div class="text-wrapper" id="1994404254"> <h3 class="slide-title" id="1365944010">Bildtitel</h3> 
+ <div class="slide-text richText" id="1503557523">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1979959125"> <span class="iconBg" id="1031100599"> <span class="icon hasFontIcon icon-star" id="1911831402"></span> 
+</span> 
+ <span class="text" id="1532531692">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1020583594"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0200-1920w.JPG" id="1950642700" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1560152919"></div> 
+ <div class="slide-inner" id="1889849722"> <div class="text-wrapper" id="1337099704"> <h3 class="slide-title" id="1755089052">Bildtitel</h3> 
+ <div class="slide-text richText" id="1142221913">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1297315993"> <span class="iconBg" id="1187599826"> <span class="icon hasFontIcon icon-star" id="1078670441"></span> 
+</span> 
+ <span class="text" id="1740299788">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1670766063"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0199-1920w.JPG" id="1667462044" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1506371289"></div> 
+ <div class="slide-inner" id="1948764400"> <div class="text-wrapper" id="1007979474"> <h3 class="slide-title" id="1690662788">Bildtitel</h3> 
+ <div class="slide-text richText" id="1304871930">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1932442703"> <span class="iconBg" id="1081310141"> <span class="icon hasFontIcon icon-star" id="1231370124"></span> 
+</span> 
+ <span class="text" id="1865896218">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1549406944"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/IMG-20220330-WA0063-1920w.jpg" id="1338773834" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1944147902"></div> 
+ <div class="slide-inner" id="1755150311"> <div class="text-wrapper" id="1305246780"> <h3 class="slide-title" id="1829732386">Bildtitel</h3> 
+ <div class="slide-text richText" id="1816918707">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1457593635"> <span class="iconBg" id="1639510083"> <span class="icon hasFontIcon icon-star" id="1373846150"></span> 
+</span> 
+ <span class="text" id="1953665673">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1143927915"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/IMG-20220330-WA0079-1920w.jpg" id="1301726885" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1092080031"></div> 
+ <div class="slide-inner" id="1545437214"> <div class="text-wrapper" id="1601162933"> <h3 class="slide-title" id="1766057357">Bildtitel</h3> 
+ <div class="slide-text richText" id="1644589162">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1564688190"> <span class="iconBg" id="1121373352"> <span class="icon hasFontIcon icon-star" id="1512248210"></span> 
+</span> 
+ <span class="text" id="1196373911">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1373966052"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/IMG-20220330-WA0088-1920w.jpg" id="1992583926" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1060859251"></div> 
+ <div class="slide-inner" id="1033392544"> <div class="text-wrapper" id="1281902305"> <h3 class="slide-title" id="1115665202">Bildtitel</h3> 
+ <div class="slide-text richText" id="1501618277">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1637061776"> <span class="iconBg" id="1260750569"> <span class="icon hasFontIcon icon-star" id="1463650614"></span> 
+</span> 
+ <span class="text" id="1819024619">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1753483326"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/IMG-20220330-WA0090-1920w.jpg" id="1129360630" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1236335892"></div> 
+ <div class="slide-inner" id="1091434971"> <div class="text-wrapper" id="1412993402"> <h3 class="slide-title" id="1678810863">Bildtitel</h3> 
+ <div class="slide-text richText" id="1150722895">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1462692771"> <span class="iconBg" id="1244892561"> <span class="icon hasFontIcon icon-star" id="1269558099"></span> 
+</span> 
+ <span class="text" id="1563564811">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1533248767"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/IMG-20220330-WA0093-1920w.jpg" id="1741688645" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1133375938"></div> 
+ <div class="slide-inner" id="1580823262"> <div class="text-wrapper" id="1846767093"> <h3 class="slide-title" id="1354771416">Bildtitel</h3> 
+ <div class="slide-text richText" id="1507869138">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1681422552"> <span class="iconBg" id="1242986349"> <span class="icon hasFontIcon icon-star" id="1700417161"></span> 
+</span> 
+ <span class="text" id="1648520786">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1342295158"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/IMG-20220330-WA0096-1920w.jpg" id="1868702325" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1108762187"></div> 
+ <div class="slide-inner" id="1090853395"> <div class="text-wrapper" id="1868464928"> <h3 class="slide-title" id="1170792186">Bildtitel</h3> 
+ <div class="slide-text richText" id="1449215692">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1271774102"> <span class="iconBg" id="1968873130"> <span class="icon hasFontIcon icon-star" id="1900736768"></span> 
+</span> 
+ <span class="text" id="1471663380">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1976110638"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/IMG-20220330-WA0095-1920w.jpg" id="1923316757" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1362604987"></div> 
+ <div class="slide-inner" id="1307729208"> <div class="text-wrapper" id="1138782511"> <h3 class="slide-title" id="1977820994">Bildtitel</h3> 
+ <div class="slide-text richText" id="1082891387">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1262663994"> <span class="iconBg" id="1346701156"> <span class="icon hasFontIcon icon-star" id="1953823099"></span> 
+</span> 
+ <span class="text" id="1753204768">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1084369655" id="1084369655" data-anchor="Children"> <div class="dmRespColsWrapper" id="1594163750"> <div class="dmRespCol small-12 large-4 medium-4" id="1004888046"> <div class="u_1317150498 dmNewParagraph" data-element-type="paragraph" id="1317150498" style="transition: opacity 1s ease-in-out 0s; text-align: left;" data-version="5"> <h4 class="m-size-14 text-align-center m-text-align-center size-20"><span class="m-font-size-14 font-size-20" m-font-size-set="true" style="color: rgb(49, 49, 49); display: initial; text-decoration: underline;">Altbau</span></h4> 
+</div> <div class="u_1412283774 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1412283774"> <div class="flexslider ed-version arrows-visible" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':true,'controlNav':false,'slideshowSpeed':7000,'animationDuration':600,'pausePlay':true,'prevText':'','nextText':''}" id="1973750008" layout="empty"> <ul class="slides" id="1311964050"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1095029841"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0051-1920w.JPG" id="1173256981" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1963859911"></div> 
+ <div class="slide-inner" id="1803660756"> <div class="text-wrapper" id="1053043733"> <h3 class="slide-title" id="1998263688">Bildtitel</h3> 
+ <div class="slide-text richText" id="1410209462">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1026253690"> <span class="iconBg" id="1287146826"> <span class="icon hasFontIcon icon-star" id="1614295765"></span> 
+</span> 
+ <span class="text" id="1947462876">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1291037599"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0057-1920w.JPG" id="1784498740" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1395877093"></div> 
+ <div class="slide-inner" id="1089245370"> <div class="text-wrapper" id="1766198897"> <h3 class="slide-title" id="1779533670">Bildtitel</h3> 
+ <div class="slide-text richText" id="1837246725">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1561612133"> <span class="iconBg" id="1817541329"> <span class="icon hasFontIcon icon-star" id="1707657220"></span> 
+</span> 
+ <span class="text" id="1981409247">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1595743712"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0052-1920w.JPG" id="1037064270" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1263527453"></div> 
+ <div class="slide-inner" id="1349705492"> <div class="text-wrapper" id="1514605337"> <h3 class="slide-title" id="1827720110">Bildtitel</h3> 
+ <div class="slide-text richText" id="1603818354">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1274866628"> <span class="iconBg" id="1235488176"> <span class="icon hasFontIcon icon-star" id="1165614576"></span> 
+</span> 
+ <span class="text" id="1506244827">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1281006180"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0054-1920w.JPG" id="1433075515" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1238246146"></div> 
+ <div class="slide-inner" id="1716258626"> <div class="text-wrapper" id="1749920031"> <h3 class="slide-title" id="1864363403">Bildtitel</h3> 
+ <div class="slide-text richText" id="1408548089">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1468365747"> <span class="iconBg" id="1450935737"> <span class="icon hasFontIcon icon-star" id="1967453597"></span> 
+</span> 
+ <span class="text" id="1797145365">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1816001031"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0055-1920w.JPG" id="1736810280" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1907280340"></div> 
+ <div class="slide-inner" id="1691139113"> <div class="text-wrapper" id="1708781039"> <h3 class="slide-title" id="1882971302">Bildtitel</h3> 
+ <div class="slide-text richText" id="1939586665">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1313958975"> <span class="iconBg" id="1320169267"> <span class="icon hasFontIcon icon-star" id="1605700544"></span> 
+</span> 
+ <span class="text" id="1015489254">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1199731367"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0064-1920w.JPG" id="1457814292" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1328515366"></div> 
+ <div class="slide-inner" id="1185703863"> <div class="text-wrapper" id="1859104666"> <h3 class="slide-title" id="1107267714">Bildtitel</h3> 
+ <div class="slide-text richText" id="1157072602">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1096779961"> <span class="iconBg" id="1125454144"> <span class="icon hasFontIcon icon-star" id="1777696664"></span> 
+</span> 
+ <span class="text" id="1318114068">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1541826277"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0062-1920w.JPG" id="1164495268" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1266337528"></div> 
+ <div class="slide-inner" id="1003386128"> <div class="text-wrapper" id="1727715719"> <h3 class="slide-title" id="1399050729">Bildtitel</h3> 
+ <div class="slide-text richText" id="1966926267">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1549620399"> <span class="iconBg" id="1674859210"> <span class="icon hasFontIcon icon-star" id="1826679096"></span> 
+</span> 
+ <span class="text" id="1376540870">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1959936193"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0044-1920w.JPG" id="1641844181" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1557221964"></div> 
+ <div class="slide-inner" id="1743449136"> <div class="text-wrapper" id="1961102990"> <h3 class="slide-title" id="1400732245">Bildtitel</h3> 
+ <div class="slide-text richText" id="1818604301">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1801139384"> <span class="iconBg" id="1254344824"> <span class="icon hasFontIcon icon-star" id="1655694195"></span> 
+</span> 
+ <span class="text" id="1453051582">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1801506731"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650908809091-1920w.JPG" id="1048939979" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1258404981"></div> 
+ <div class="slide-inner" id="1727482958"> <div class="text-wrapper" id="1984929546"> <h3 class="slide-title" id="1068577508">Bildtitel</h3> 
+ <div class="slide-text richText" id="1842381763">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1933423319"> <span class="iconBg" id="1937308186"> <span class="icon hasFontIcon icon-star" id="1877120869"></span> 
+</span> 
+ <span class="text" id="1547947313">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1728094079"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650908809153-1920w.JPG" id="1932445267" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1999156648"></div> 
+ <div class="slide-inner" id="1173211026"> <div class="text-wrapper" id="1913511472"> <h3 class="slide-title" id="1685991129">Bildtitel</h3> 
+ <div class="slide-text richText" id="1015212889">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1496360025"> <span class="iconBg" id="1804686673"> <span class="icon hasFontIcon icon-star" id="1931876836"></span> 
+</span> 
+ <span class="text" id="1205085575">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1154650630"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0060-1920w.JPG" id="1972150719" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1775182621"></div> 
+ <div class="slide-inner" id="1587569447"> <div class="text-wrapper" id="1010225060"> <h3 class="slide-title" id="1794447082">Bildtitel</h3> 
+ <div class="slide-text richText" id="1636268342">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1256351785"> <span class="iconBg" id="1397837974"> <span class="icon hasFontIcon icon-star" id="1141453652"></span> 
+</span> 
+ <span class="text" id="1292171107">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1878957314"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650908809130-1920w.JPG" id="1376212755" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1977906992"></div> 
+ <div class="slide-inner" id="1050932527"> <div class="text-wrapper" id="1979462660"> <h3 class="slide-title" id="1422162528">Bildtitel</h3> 
+ <div class="slide-text richText" id="1932384610">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1272040330"> <span class="iconBg" id="1784928060"> <span class="icon hasFontIcon icon-star" id="1068590753"></span> 
+</span> 
+ <span class="text" id="1814018551">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1489256483"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0020-1920w.JPG" id="1579149018" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1951178725"></div> 
+ <div class="slide-inner" id="1143451956"> <div class="text-wrapper" id="1913818651"> <h3 class="slide-title" id="1762362090">Bildtitel</h3> 
+ <div class="slide-text richText" id="1684489160">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1640478355"> <span class="iconBg" id="1283390544"> <span class="icon hasFontIcon icon-star" id="1468987994"></span> 
+</span> 
+ <span class="text" id="1819062865">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1086530385"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0025-1920w.JPG" id="1971204212" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1806037119"></div> 
+ <div class="slide-inner" id="1071015963"> <div class="text-wrapper" id="1666508210"> <h3 class="slide-title" id="1772000130">Bildtitel</h3> 
+ <div class="slide-text richText" id="1574608796">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1715072453"> <span class="iconBg" id="1502499173"> <span class="icon hasFontIcon icon-star" id="1448501000"></span> 
+</span> 
+ <span class="text" id="1139578581">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1928780540"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0026-1920w.JPG" id="1650287615" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1315623441"></div> 
+ <div class="slide-inner" id="1415464590"> <div class="text-wrapper" id="1700382090"> <h3 class="slide-title" id="1468666849">Bildtitel</h3> 
+ <div class="slide-text richText" id="1507554554">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1457260250"> <span class="iconBg" id="1626730371"> <span class="icon hasFontIcon icon-star" id="1666891044"></span> 
+</span> 
+ <span class="text" id="1021703524">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1993977812"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0030-1920w.JPG" id="1058793707" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1022645103"></div> 
+ <div class="slide-inner" id="1650875296"> <div class="text-wrapper" id="1663705614"> <h3 class="slide-title" id="1242231220">Bildtitel</h3> 
+ <div class="slide-text richText" id="1364118204">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1035689483"> <span class="iconBg" id="1770004407"> <span class="icon hasFontIcon icon-star" id="1900890908"></span> 
+</span> 
+ <span class="text" id="1384770045">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1508417050"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0017-2acf42fb-1920w.JPG" id="1459416163" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1263297562"></div> 
+ <div class="slide-inner" id="1116778081"> <div class="text-wrapper" id="1925126531"> <h3 class="slide-title" id="1452946298">Bildtitel</h3> 
+ <div class="slide-text richText" id="1303273457">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1278957233"> <span class="iconBg" id="1021595553"> <span class="icon hasFontIcon icon-star" id="1762068229"></span> 
+</span> 
+ <span class="text" id="1409677334">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1626819149"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0022-1920w.JPG" id="1586650397" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1240806655"></div> 
+ <div class="slide-inner" id="1870239286"> <div class="text-wrapper" id="1481272955"> <h3 class="slide-title" id="1625734976">Bildtitel</h3> 
+ <div class="slide-text richText" id="1064906242">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1056937568"> <span class="iconBg" id="1521049691"> <span class="icon hasFontIcon icon-star" id="1204597185"></span> 
+</span> 
+ <span class="text" id="1627422156">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+ <div class="u_1584971610 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1584971610"> <div class="flexslider ed-version arrows-visible" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':true,'controlNav':false,'slideshowSpeed':7000,'animationDuration':600,'pausePlay':true}" id="1052408567" layout="empty"> <ul class="slides" id="1839500511"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1462038095"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1687898578910-1920w.jpg" id="1103529295" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1852759373"></div> 
+ <div class="slide-inner" id="1572785382"> <div class="text-wrapper" id="1579296001"> <div class="slide-text richText" id="1397853826">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1806072862"> <span class="iconBg" id="1230006544"> <span class="icon hasFontIcon icon-star" id="1646334942"></span> 
+</span> 
+ <span class="text" id="1357187740"></span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1929755162"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1687898578926-1920w.jpg" id="1653536173" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1452072484"></div> 
+ <div class="slide-inner" id="1428911905"> <div class="text-wrapper" id="1204770746"> <h3 class="slide-title" id="1674700641">Bildtitel</h3> 
+ <div class="slide-text richText" id="1101995643">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1516416940"> <span class="iconBg" id="1208690976"> <span class="icon hasFontIcon icon-star" id="1519854464"></span> 
+</span> 
+ <span class="text" id="1683813800">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1519935488"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1687898578767-1920w.jpg" id="1622662470" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1185759456"></div> 
+ <div class="slide-inner" id="1373964651"> <div class="text-wrapper" id="1190127372"> <h3 class="slide-title" id="1070042866">Bildtitel</h3> 
+ <div class="slide-text richText" id="1126687896">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1724622775"> <span class="iconBg" id="1736907390"> <span class="icon hasFontIcon icon-star" id="1400256672"></span> 
+</span> 
+ <span class="text" id="1733128857">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1957439079"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1687898578802-1920w.jpg" id="1826271938" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1994904925"></div> 
+ <div class="slide-inner" id="1248176956"> <div class="text-wrapper" id="1393677922"> <h3 class="slide-title" id="1457855124">Bildtitel</h3> 
+ <div class="slide-text richText" id="1498385689">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1147793231"> <span class="iconBg" id="1229591313"> <span class="icon hasFontIcon icon-star" id="1447026425"></span> 
+</span> 
+ <span class="text" id="1411602924">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1651700415"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1687898578794-1920w.jpg" id="1816681501" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1459775105"></div> 
+ <div class="slide-inner" id="1777555556"> <div class="text-wrapper" id="1311453472"> <h3 class="slide-title" id="1878538399">Bildtitel</h3> 
+ <div class="slide-text richText" id="1877628592">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1163310266"> <span class="iconBg" id="1340325065"> <span class="icon hasFontIcon icon-star" id="1792067506"></span> 
+</span> 
+ <span class="text" id="1416924031">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1392988000"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1687898578783-1920w.jpg" id="1389312227" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1469699923"></div> 
+ <div class="slide-inner" id="1531200271"> <div class="text-wrapper" id="1802255750"> <h3 class="slide-title" id="1283497175">Bildtitel</h3> 
+ <div class="slide-text richText" id="1593472936">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1465466175"> <span class="iconBg" id="1965532839"> <span class="icon hasFontIcon icon-star" id="1783554123"></span> 
+</span> 
+ <span class="text" id="1817267134">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1094908170"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1687898578758-1920w.jpg" id="1479533025" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1112469171"></div> 
+ <div class="slide-inner" id="1893229210"> <div class="text-wrapper" id="1929269901"> <h3 class="slide-title" id="1985965709">Bildtitel</h3> 
+ <div class="slide-text richText" id="1040066218">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1134636587"> <span class="iconBg" id="1807188028"> <span class="icon hasFontIcon icon-star" id="1192412463"></span> 
+</span> 
+ <span class="text" id="1658137294">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 large-4 medium-4" id="1508117998"> <div class="u_1725983640 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1725983640"> <div class="flexslider ed-version arrows-visible" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':false,'isFade':true,'controlNav':false,'slideshowSpeed':7000,'animationDuration':600,'pausePlay':true,'prevText':'','nextText':''}" id="1691625061" layout="empty"> <ul class="slides" id="1346229433"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1201095565"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907845178-1920w.JPG" id="1083572117" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1737247052"></div> 
+ <div class="slide-inner" id="1208733705"> <div class="text-wrapper" id="1652761327"> <h3 class="slide-title" id="1092083218">Bildtitel</h3> 
+ <div class="slide-text richText" id="1684342790">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1854384159"> <span class="iconBg" id="1411053118"> <span class="icon hasFontIcon icon-star" id="1906719359"></span> 
+</span> 
+ <span class="text" id="1905082951">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1865229382"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0097-1920w.JPG" id="1729207488" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1845621014"></div> 
+ <div class="slide-inner" id="1293506104"> <div class="text-wrapper" id="1339733537"> <h3 class="slide-title" id="1766237177">Bildtitel</h3> 
+ <div class="slide-text richText" id="1169539803">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1083645158"> <span class="iconBg" id="1002725556"> <span class="icon hasFontIcon icon-star" id="1654625666"></span> 
+</span> 
+ <span class="text" id="1509959610">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1425368466"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0101-1920w.JPG" id="1151824859" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1824398938"></div> 
+ <div class="slide-inner" id="1971748486"> <div class="text-wrapper" id="1936375797"> <h3 class="slide-title" id="1553452715">Bildtitel</h3> 
+ <div class="slide-text richText" id="1693921717">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1746294951"> <span class="iconBg" id="1127879541"> <span class="icon hasFontIcon icon-star" id="1023935428"></span> 
+</span> 
+ <span class="text" id="1279620343">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1932279953"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650910359285-1920w.JPG" id="1115128615" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1345134719"></div> 
+ <div class="slide-inner" id="1093737046"> <div class="text-wrapper" id="1409267993"> <h3 class="slide-title" id="1675280458">Bildtitel</h3> 
+ <div class="slide-text richText" id="1908877530">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1762476058"> <span class="iconBg" id="1953121047"> <span class="icon hasFontIcon icon-star" id="1543143923"></span> 
+</span> 
+ <span class="text" id="1730848007">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1616303853"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650910359317-1920w.JPG" id="1891950369" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1026022882"></div> 
+ <div class="slide-inner" id="1474173248"> <div class="text-wrapper" id="1412500119"> <h3 class="slide-title" id="1729988048">Bildtitel</h3> 
+ <div class="slide-text richText" id="1194944624">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1200463248"> <span class="iconBg" id="1895739652"> <span class="icon hasFontIcon icon-star" id="1782161466"></span> 
+</span> 
+ <span class="text" id="1259351215">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1470426595"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0134-1920w.JPG" id="1326065506" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1720724064"></div> 
+ <div class="slide-inner" id="1969142260"> <div class="text-wrapper" id="1277428532"> <h3 class="slide-title" id="1339016004">Bildtitel</h3> 
+ <div class="slide-text richText" id="1434117701">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1589110721"> <span class="iconBg" id="1720291334"> <span class="icon hasFontIcon icon-star" id="1145931344"></span> 
+</span> 
+ <span class="text" id="1477427687">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1312775630"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0123-1920w.JPG" id="1359483244" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1045615281"></div> 
+ <div class="slide-inner" id="1492769718"> <div class="text-wrapper" id="1184270929"> <h3 class="slide-title" id="1091229842">Bildtitel</h3> 
+ <div class="slide-text richText" id="1483414874">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1746858985"> <span class="iconBg" id="1237868819"> <span class="icon hasFontIcon icon-star" id="1169846724"></span> 
+</span> 
+ <span class="text" id="1412419408">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1114850175"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0150-1920w.JPG" id="1357315721" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1761225121"></div> 
+ <div class="slide-inner" id="1611122774"> <div class="text-wrapper" id="1291863291"> <h3 class="slide-title" id="1264768253">Bildtitel</h3> 
+ <div class="slide-text richText" id="1375256775">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1358008987"> <span class="iconBg" id="1757568325"> <span class="icon hasFontIcon icon-star" id="1877251316"></span> 
+</span> 
+ <span class="text" id="1562430533">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1097907642"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0153-1920w.JPG" id="1988462302" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1032377148"></div> 
+ <div class="slide-inner" id="1855414178"> <div class="text-wrapper" id="1535824795"> <h3 class="slide-title" id="1550018022">Bildtitel</h3> 
+ <div class="slide-text richText" id="1422935028">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1270795949"> <span class="iconBg" id="1804634688"> <span class="icon hasFontIcon icon-star" id="1726605930"></span> 
+</span> 
+ <span class="text" id="1267297167">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1785409381"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0166-1920w.JPG" id="1041956990" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1088109417"></div> 
+ <div class="slide-inner" id="1267741658"> <div class="text-wrapper" id="1113792060"> <h3 class="slide-title" id="1259954304">Bildtitel</h3> 
+ <div class="slide-text richText" id="1535667215">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1382113290"> <span class="iconBg" id="1237981134"> <span class="icon hasFontIcon icon-star" id="1368350651"></span> 
+</span> 
+ <span class="text" id="1155208777">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1642307268"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650910359252-1920w.JPG" id="1404250866" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1502057408"></div> 
+ <div class="slide-inner" id="1315599956"> <div class="text-wrapper" id="1766466696"> <h3 class="slide-title" id="1178355814">Bildtitel</h3> 
+ <div class="slide-text richText" id="1238151263">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1607196103"> <span class="iconBg" id="1695266968"> <span class="icon hasFontIcon icon-star" id="1244278634"></span> 
+</span> 
+ <span class="text" id="1600100157">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1367040673"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907845016-1920w.JPG" id="1320228640" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1399110454"></div> 
+ <div class="slide-inner" id="1266247075"> <div class="text-wrapper" id="1037745834"> <h3 class="slide-title" id="1497393479">Bildtitel</h3> 
+ <div class="slide-text richText" id="1312661773">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1240643586"> <span class="iconBg" id="1689199589"> <span class="icon hasFontIcon icon-star" id="1415072782"></span> 
+</span> 
+ <span class="text" id="1757930203">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1966223826"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907844941-1920w.JPG" id="1751925292" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1854135746"></div> 
+ <div class="slide-inner" id="1579001956"> <div class="text-wrapper" id="1091198999"> <h3 class="slide-title" id="1218597029">Bildtitel</h3> 
+ <div class="slide-text richText" id="1521323673">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1271423490"> <span class="iconBg" id="1272209926"> <span class="icon hasFontIcon icon-star" id="1844706477"></span> 
+</span> 
+ <span class="text" id="1514409534">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1274979031"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907844961-1920w.JPG" id="1810882876" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1770345079"></div> 
+ <div class="slide-inner" id="1514949092"> <div class="text-wrapper" id="1467456708"> <h3 class="slide-title" id="1959227932">Bildtitel</h3> 
+ <div class="slide-text richText" id="1030123513">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1543407513"> <span class="iconBg" id="1769517147"> <span class="icon hasFontIcon icon-star" id="1778895258"></span> 
+</span> 
+ <span class="text" id="1995031727">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1758396958"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907844991-1920w.JPG" id="1395067122" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1795592816"></div> 
+ <div class="slide-inner" id="1153820945"> <div class="text-wrapper" id="1382176160"> <h3 class="slide-title" id="1051241710">Bildtitel</h3> 
+ <div class="slide-text richText" id="1653156647">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1536308824"> <span class="iconBg" id="1652089712"> <span class="icon hasFontIcon icon-star" id="1561257096"></span> 
+</span> 
+ <span class="text" id="1997328204">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1846427476"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907844898-1920w.JPG" id="1589961149" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1264170022"></div> 
+ <div class="slide-inner" id="1682693084"> <div class="text-wrapper" id="1030720725"> <h3 class="slide-title" id="1975526494">Bildtitel</h3> 
+ <div class="slide-text richText" id="1660749954">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1429367337"> <span class="iconBg" id="1810365105"> <span class="icon hasFontIcon icon-star" id="1097566321"></span> 
+</span> 
+ <span class="text" id="1592005837">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1560723855"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907845099-1920w.JPG" id="1669532076" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1684177595"></div> 
+ <div class="slide-inner" id="1509588604"> <div class="text-wrapper" id="1224671628"> <h3 class="slide-title" id="1082841033">Bildtitel</h3> 
+ <div class="slide-text richText" id="1503751571">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1256840743"> <span class="iconBg" id="1325371292"> <span class="icon hasFontIcon icon-star" id="1871293584"></span> 
+</span> 
+ <span class="text" id="1887868124">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1012819497"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907845154-1920w.JPG" id="1973078809" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1465287317"></div> 
+ <div class="slide-inner" id="1319772303"> <div class="text-wrapper" id="1215749132"> <h3 class="slide-title" id="1710030938">Bildtitel</h3> 
+ <div class="slide-text richText" id="1533422327">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1413857766"> <span class="iconBg" id="1142255337"> <span class="icon hasFontIcon icon-star" id="1060383669"></span> 
+</span> 
+ <span class="text" id="1937895321">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1410183502"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907845207-1920w.JPG" id="1621138292" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1181321244"></div> 
+ <div class="slide-inner" id="1529701313"> <div class="text-wrapper" id="1822626518"> <h3 class="slide-title" id="1897423627">Bildtitel</h3> 
+ <div class="slide-text richText" id="1290236368">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1944895648"> <span class="iconBg" id="1189698866"> <span class="icon hasFontIcon icon-star" id="1365327780"></span> 
+</span> 
+ <span class="text" id="1360389013">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1247303555"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1650907845279-1920w.JPG" id="1038605486" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1584569787"></div> 
+ <div class="slide-inner" id="1523875537"> <div class="text-wrapper" id="1373265878"> <h3 class="slide-title" id="1240636723">Bildtitel</h3> 
+ <div class="slide-text richText" id="1456615761">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1868138860"> <span class="iconBg" id="1377461335"> <span class="icon hasFontIcon icon-star" id="1615918660"></span> 
+</span> 
+ <span class="text" id="1186610287">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+ <div class="u_1564418775 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1564418775"> <div class="flexslider ed-version" sliderscriptparams="{ stretch: true, animation: true, randomize: false, directionNav: true, isAutoPlay: true, isFade: true, controlNav: false, slideshowSpeed: 7000, animationDuration: 600, pausePlay: true }" id="1569107123" layout="empty"> <ul class="slides" id="1794236611"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1502974707"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0240-1920w.JPG" id="1461557133" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1962054965"></div> 
+ <div class="slide-inner" id="1940680165"> <div class="text-wrapper" id="1457804883"> <h3 class="slide-title" id="1454788869">Bildtitel</h3> 
+ <div class="slide-text richText" id="1410808424">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1736002340"> <span class="iconBg" id="1912274248"> <span class="icon hasFontIcon icon-star" id="1134096367"></span> 
+</span> 
+ <span class="text" id="1957169507">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1640830231"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0323-1920w.JPG" id="1882721340" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1520230426"></div> 
+ <div class="slide-inner" id="1418892096"> <div class="text-wrapper" id="1857751526"> <h3 class="slide-title" id="1753637174">Bildtitel</h3> 
+ <div class="slide-text richText" id="1450707451">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1876571698"> <span class="iconBg" id="1266640251"> <span class="icon hasFontIcon icon-star" id="1663172662"></span> 
+</span> 
+ <span class="text" id="1981868467">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1710134247"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0327-1920w.JPG" id="1059742520" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1028569488"></div> 
+ <div class="slide-inner" id="1625302376"> <div class="text-wrapper" id="1908883119"> <h3 class="slide-title" id="1646460906">Bildtitel</h3> 
+ <div class="slide-text richText" id="1542691174">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1128938307"> <span class="iconBg" id="1004306963"> <span class="icon hasFontIcon icon-star" id="1736026545"></span> 
+</span> 
+ <span class="text" id="1330076342">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1137003256"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0326-1920w.JPG" id="1206898339" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1263813993"></div> 
+ <div class="slide-inner" id="1233493958"> <div class="text-wrapper" id="1154478960"> <h3 class="slide-title" id="1510978263">Bildtitel</h3> 
+ <div class="slide-text richText" id="1165408478">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1334387813"> <span class="iconBg" id="1792574619"> <span class="icon hasFontIcon icon-star" id="1640523079"></span> 
+</span> 
+ <span class="text" id="1721525344">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespCol large-4 medium-4 small-12" id="1111960164"> <div class="u_1822468953 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1822468953"> <div class="flexslider ed-version" sliderscriptparams="{ stretch: true, animation: true, randomize: false, directionNav: true, isAutoPlay: true, isFade: true, controlNav: false, slideshowSpeed: 7000, animationDuration: 600, pausePlay: true }" id="1622498122" layout="empty"> <ul class="slides" id="1128165610"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1735309418"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0064-d746d941-1920w.JPG" id="1125616178" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1867375607"></div> 
+ <div class="slide-inner" id="1231504255"> <div class="text-wrapper" id="1706316436"> <h3 class="slide-title" id="1786736007">Bildtitel</h3> 
+ <div class="slide-text richText" id="1279126881">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1607896112"> <span class="iconBg" id="1798883860"> <span class="icon hasFontIcon icon-star" id="1919401404"></span> 
+</span> 
+ <span class="text" id="1123662217">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1099427741"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0066-1920w.JPG" id="1726499841" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1344290228"></div> 
+ <div class="slide-inner" id="1141678709"> <div class="text-wrapper" id="1995054433"> <h3 class="slide-title" id="1843078085">Bildtitel</h3> 
+ <div class="slide-text richText" id="1060126678">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1792297903"> <span class="iconBg" id="1552481021"> <span class="icon hasFontIcon icon-star" id="1576015786"></span> 
+</span> 
+ <span class="text" id="1747131609">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1568037462"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0096-1920w.JPG" id="1335197348" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1704591513"></div> 
+ <div class="slide-inner" id="1905458400"> <div class="text-wrapper" id="1712465402"> <h3 class="slide-title" id="1933385823">Bildtitel</h3> 
+ <div class="slide-text richText" id="1384146696">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1573712818"> <span class="iconBg" id="1028219644"> <span class="icon hasFontIcon icon-star" id="1927769412"></span> 
+</span> 
+ <span class="text" id="1587093810">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1883187802"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0067-1920w.JPG" id="1975571660" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1438126722"></div> 
+ <div class="slide-inner" id="1855793272"> <div class="text-wrapper" id="1635987131"> <h3 class="slide-title" id="1143227770">Bildtitel</h3> 
+ <div class="slide-text richText" id="1245664921">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1547563154"> <span class="iconBg" id="1370214329"> <span class="icon hasFontIcon icon-star" id="1349100011"></span> 
+</span> 
+ <span class="text" id="1277459853">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1981797371"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0099-1920w.JPG" id="1730253897" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1679019020"></div> 
+ <div class="slide-inner" id="1479896812"> <div class="text-wrapper" id="1782888782"> <h3 class="slide-title" id="1966022644">Bildtitel</h3> 
+ <div class="slide-text richText" id="1360014758">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1820022535"> <span class="iconBg" id="1834903785"> <span class="icon hasFontIcon icon-star" id="1676358668"></span> 
+</span> 
+ <span class="text" id="1306518051">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1181763118"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0176-1920w.JPG" id="1616614383" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1493781434"></div> 
+ <div class="slide-inner" id="1416373682"> <div class="text-wrapper" id="1865726930"> <h3 class="slide-title" id="1391211348">Bildtitel</h3> 
+ <div class="slide-text richText" id="1638647852">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1649080682"> <span class="iconBg" id="1246870158"> <span class="icon hasFontIcon icon-star" id="1565357068"></span> 
+</span> 
+ <span class="text" id="1924785183">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1728837580"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0181-1920w.JPG" id="1746749357" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1891516866"></div> 
+ <div class="slide-inner" id="1235995896"> <div class="text-wrapper" id="1611083683"> <h3 class="slide-title" id="1584074585">Bildtitel</h3> 
+ <div class="slide-text richText" id="1130814945">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1826109597"> <span class="iconBg" id="1202687582"> <span class="icon hasFontIcon icon-star" id="1325940704"></span> 
+</span> 
+ <span class="text" id="1663562254">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1452784779"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0182-1920w.JPG" id="1256409613" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1610154194"></div> 
+ <div class="slide-inner" id="1573630039"> <div class="text-wrapper" id="1119422983"> <h3 class="slide-title" id="1182318372">Bildtitel</h3> 
+ <div class="slide-text richText" id="1550603474">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1540273163"> <span class="iconBg" id="1709096104"> <span class="icon hasFontIcon icon-star" id="1575641173"></span> 
+</span> 
+ <span class="text" id="1266847049">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1215509678"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0183-1920w.JPG" id="1623249007" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1824570779"></div> 
+ <div class="slide-inner" id="1437857896"> <div class="text-wrapper" id="1789914516"> <h3 class="slide-title" id="1312130307">Bildtitel</h3> 
+ <div class="slide-text richText" id="1856098958">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1454152022"> <span class="iconBg" id="1701800244"> <span class="icon hasFontIcon icon-star" id="1785536248"></span> 
+</span> 
+ <span class="text" id="1781349744">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1277084245"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0184-1920w.JPG" id="1820376854" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1916352140"></div> 
+ <div class="slide-inner" id="1371131905"> <div class="text-wrapper" id="1036552227"> <h3 class="slide-title" id="1907896452">Bildtitel</h3> 
+ <div class="slide-text richText" id="1216577749">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1708398809"> <span class="iconBg" id="1142813923"> <span class="icon hasFontIcon icon-star" id="1221232213"></span> 
+</span> 
+ <span class="text" id="1447865075">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+ <div class="u_1100874575 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1100874575"> <div class="flexslider ed-version" sliderscriptparams="{ stretch: true, animation: true, randomize: false, directionNav: true, isAutoPlay: true, isFade: true, controlNav: false, slideshowSpeed: 7000, animationDuration: 600, pausePlay: true }" id="1271542455" layout="empty"> <ul class="slides" id="1562554350"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1175530827"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0031-98c62718-1920w.JPG" id="1104485847" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1578430627"></div> 
+ <div class="slide-inner" id="1171062986"> <div class="text-wrapper" id="1247682479"> <h3 class="slide-title" id="1565746187">Bildtitel</h3> 
+ <div class="slide-text richText" id="1469587149">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1403855091"> <span class="iconBg" id="1574890611"> <span class="icon hasFontIcon icon-star" id="1262503207"></span> 
+</span> 
+ <span class="text" id="1313795774">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1993387387"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0034-1920w.JPG" id="1409936198" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1993278860"></div> 
+ <div class="slide-inner" id="1056953521"> <div class="text-wrapper" id="1393743989"> <h3 class="slide-title" id="1763703184">Bildtitel</h3> 
+ <div class="slide-text richText" id="1761361802">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1740313704"> <span class="iconBg" id="1219668000"> <span class="icon hasFontIcon icon-star" id="1248208246"></span> 
+</span> 
+ <span class="text" id="1793472431">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1965176479"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0051-20e91ff5-1920w.JPG" id="1507870715" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1446289165"></div> 
+ <div class="slide-inner" id="1355572356"> <div class="text-wrapper" id="1131304657"> <h3 class="slide-title" id="1042727707">Bildtitel</h3> 
+ <div class="slide-text richText" id="1959257804">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1510461065"> <span class="iconBg" id="1816356897"> <span class="icon hasFontIcon icon-star" id="1572006326"></span> 
+</span> 
+ <span class="text" id="1799283895">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1464214674"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0050-94c32121-1920w.JPG" id="1095080714" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1559956016"></div> 
+ <div class="slide-inner" id="1826175169"> <div class="text-wrapper" id="1844035097"> <h3 class="slide-title" id="1816599483">Bildtitel</h3> 
+ <div class="slide-text richText" id="1149129310">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1251734986"> <span class="iconBg" id="1584853533"> <span class="icon hasFontIcon icon-star" id="1371997641"></span> 
+</span> 
+ <span class="text" id="1495930345">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1324539873"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0049-95f5572e-1920w.JPG" id="1556640465" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1203792915"></div> 
+ <div class="slide-inner" id="1211895605"> <div class="text-wrapper" id="1335667202"> <h3 class="slide-title" id="1626097738">Bildtitel</h3> 
+ <div class="slide-text richText" id="1863419216">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1817755402"> <span class="iconBg" id="1590377661"> <span class="icon hasFontIcon icon-star" id="1894550523"></span> 
+</span> 
+ <span class="text" id="1275972796">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1469483904"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0048-ffdd38cc-1920w.JPG" id="1853612901" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1839598749"></div> 
+ <div class="slide-inner" id="1193357967"> <div class="text-wrapper" id="1439014601"> <h3 class="slide-title" id="1166283938">Bildtitel</h3> 
+ <div class="slide-text richText" id="1304457874">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1153791322"> <span class="iconBg" id="1415660817"> <span class="icon hasFontIcon icon-star" id="1680082952"></span> 
+</span> 
+ <span class="text" id="1994154489">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1472323836"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0047-cc4eacff-1920w.JPG" id="1558198157" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1853305340"></div> 
+ <div class="slide-inner" id="1725491491"> <div class="text-wrapper" id="1625606183"> <h3 class="slide-title" id="1403172196">Bildtitel</h3> 
+ <div class="slide-text richText" id="1790825950">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1197473966"> <span class="iconBg" id="1442533327"> <span class="icon hasFontIcon icon-star" id="1463800525"></span> 
+</span> 
+ <span class="text" id="1998671530">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1541846214"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0046-4738a245-1920w.JPG" id="1436369058" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1315671387"></div> 
+ <div class="slide-inner" id="1388677129"> <div class="text-wrapper" id="1789827890"> <h3 class="slide-title" id="1974729462">Bildtitel</h3> 
+ <div class="slide-text richText" id="1910673475">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1413117391"> <span class="iconBg" id="1341633301"> <span class="icon hasFontIcon icon-star" id="1979794102"></span> 
+</span> 
+ <span class="text" id="1433322166">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1229531840"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0045-de5d4d0b-1920w.JPG" id="1178266589" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1143215292"></div> 
+ <div class="slide-inner" id="1497672134"> <div class="text-wrapper" id="1200135026"> <h3 class="slide-title" id="1460165841">Bildtitel</h3> 
+ <div class="slide-text richText" id="1613666399">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1209247116"> <span class="iconBg" id="1293124019"> <span class="icon hasFontIcon icon-star" id="1057352393"></span> 
+</span> 
+ <span class="text" id="1471003414">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1550894094"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0043-1920w.JPG" id="1904285931" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1349043564"></div> 
+ <div class="slide-inner" id="1655530160"> <div class="text-wrapper" id="1261721234"> <h3 class="slide-title" id="1709071619">Bildtitel</h3> 
+ <div class="slide-text richText" id="1295100405">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1401268148"> <span class="iconBg" id="1680336285"> <span class="icon hasFontIcon icon-star" id="1754047347"></span> 
+</span> 
+ <span class="text" id="1461255693">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1606540302"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0044-1c4a37a2-1920w.JPG" id="1101831887" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1317317712"></div> 
+ <div class="slide-inner" id="1433500993"> <div class="text-wrapper" id="1354332855"> <h3 class="slide-title" id="1779660965">Bildtitel</h3> 
+ <div class="slide-text richText" id="1364225418">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1903561456"> <span class="iconBg" id="1653313197"> <span class="icon hasFontIcon icon-star" id="1989732331"></span> 
+</span> 
+ <span class="text" id="1335400271">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1406725185"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0042-1920w.JPG" id="1443136521" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1825205594"></div> 
+ <div class="slide-inner" id="1963161178"> <div class="text-wrapper" id="1270939759"> <h3 class="slide-title" id="1994342343">Bildtitel</h3> 
+ <div class="slide-text richText" id="1524752721">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1813081171"> <span class="iconBg" id="1525174400"> <span class="icon hasFontIcon icon-star" id="1415805325"></span> 
+</span> 
+ <span class="text" id="1596367877">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1245709669"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/unnamed-1920w.webp" id="1528129016" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1489856527"></div> 
+ <div class="slide-inner" id="1554039290"> <div class="text-wrapper" id="1251880407"> <h3 class="slide-title" id="1087611568">Bildtitel</h3> 
+ <div class="slide-text richText" id="1807680554">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1768004302"> <span class="iconBg" id="1310189642"> <span class="icon hasFontIcon icon-star" id="1795428763"></span> 
+</span> 
+ <span class="text" id="1563100296">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1644976275"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/hncfgmnj-1920w.webp" id="1756194427" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1621819955"></div> 
+ <div class="slide-inner" id="1207853425"> <div class="text-wrapper" id="1537114901"> <h3 class="slide-title" id="1350066112">Bildtitel</h3> 
+ <div class="slide-text richText" id="1863767690">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1588735988"> <span class="iconBg" id="1843734163"> <span class="icon hasFontIcon icon-star" id="1657405747"></span> 
+</span> 
+ <span class="text" id="1373364702">Button</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1626396883"><img dm="true" src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/gmjvjm-1920w.webp" id="1105103877" alt="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1232222363"></div> 
+ <div class="slide-inner" id="1550000932"> <div class="text-wrapper" id="1010315686"> <h3 class="slide-title" id="1246077727">Bildtitel</h3> 
+ <div class="slide-text richText" id="1491521950">Untertitel hier einf&uuml;gen</div> 
+</div> 
+ <div class="slide-button dmWidget clearfix" id="1955444711"> <span class="iconBg" id="1785919916"> <span class="icon hasFontIcon icon-star" id="1215787188"></span> 
+</span> 
+ <span class="text" id="1836062686">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1390947199"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1632155419 dmRespRow" style="text-align: center;" id="1632155419"> <div class="dmRespColsWrapper" id="1253858808"> <div class="u_1063824722 dmRespCol small-12 large-6 medium-6" id="1063824722"> <div class="u_1944921932 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1944921932"> <a href="https://senioren.evd-ev.de/" id="1905606803" class="" target="_blank" file="false"><img src="https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/Partner+Logo+2025-2026-1920w.png" alt="Direkt zu den Füchse Duisburg" id="1158854950" class="" width="1920" height="960" data-dm-image-path="https://irp.cdn-website.com/dc4867de/dms3rep/multi/Partner+Logo+2025-2026.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <nav class="u_1973387440 effect-top-bottom main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1973387440" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="https://lirp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" alt="" data-nav-structure="SPLIT" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top left_nav " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/impressum" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="impressum"> <span class="nav-item-text " data-link-text="
+         Impressum
+        " data-auto="page-text-style">Impressum<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/datenschutz720ef5f0" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="datenschutz720ef5f0"> <span class="nav-item-text " data-link-text="
+         Datenschutz
+        " data-auto="page-text-style">Datenschutz<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+ <a class="middleLogoLink" href="/home" data-auto="nav-middle-logo-link"><img class="navLogo" id="navLogo" src="https://lirp.cdn-website.com/dc4867de/dms3rep/multi/opt/MediumSquareLogoohneHintergrund-1920w.png" alt="" data-auto="nav-logo" onerror="handleImageLoadError(this)"/></a> 
+ <ul role="menubar" class="unifiednav__container unav-top right_nav "> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/datenschutz720ef5f0" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="datenschutz720ef5f0"> <span class="nav-item-text " data-link-text="
+         Datenschutz
+        " data-auto="page-text-style">Datenschutz<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/agb" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="agb"> <span class="nav-item-text " data-link-text="
+         AGB
+        " data-auto="page-text-style">AGB<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1332161287 dmRespCol small-12 medium-6 large-6" id="1332161287"> <div class="u_1299492659 dmNewParagraph" data-element-type="paragraph" id="1299492659" style="transition: opacity 1s ease-in-out;" data-version="5"> <h5 class="text-align-left"><br/></h5> 
+ <h5 class="text-align-left"><span style="color: rgb(255, 255, 255); display: initial;"><span class="ql-cursor">﻿</span>Kontakt</span></h5> 
+</div> <div class="u_1521574249 dmNewParagraph" data-element-type="paragraph" id="1521574249" style="transition: none; display: block;" data-version="5"> <h6 class="text-align-left"><span style="display: initial; font-weight: 300; color: rgb(255, 255, 255);">Thomas Kindler Dachdeckerfachbetrieb GmbH</span></h6> 
+ <h6 class="text-align-left"><span style="display: initial; color: rgb(255, 255, 255);">Kurtstr.32</span></h6> 
+ <h6 class="text-align-left"><span style="display: initial; color: rgb(255, 255, 255);">47167 Duisburg</span></h6> 
+ <h6 class="text-align-left"><span style="display: initial;"><br/></span></h6> 
+ <h6 class="text-align-left"><span style="display: initial; color: rgb(255, 255, 255);">Email: Kindler-Dach@gmx.de<br/>Tele: 0203-94083070</span></h6> 
+ <h6 class="text-align-left"><span style="font-weight: normal; color: rgb(255, 255, 255); display: initial;"><br/></span></h6> 
+<p><span style="font-weight: normal; color: rgb(255, 255, 255); display: initial;">Registergericht: Amtsgericht Duisburg</span></p><p><span style="font-weight: normal; color: rgb(255, 255, 255); display: initial;">Handelsregister-Nr.: HRB 38980</span><span style="display: initial;"><br/></span></p></div> <div class="u_1532974712 align-center text-align-center dmSocialHub gapSpacing" id="1532974712" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv " data-auto="social-hub-inner"> <a href="mailto:kindler-dach@gmx.de" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://wa.me/00491604633593" target="_blank" dm_dont_rewrite_url="true" aria-label="whatsapp" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Whatsapp&apos;)"> <span class="dmSocialWhatsapp dm-social-icons-whatsapp oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="tel:+4920394083070" target="_blank" dm_dont_rewrite_url="true" aria-label="phone" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Phone&apos;)"> <span class="dmSocialPhone icon-phone oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://facebook.com/profile.php?id=61576222389463&amp;locale=de_DE" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="http://instagram.com/tk_dachdeckerfachbetrieb/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1106243893 widget-1f5975 dmCustomWidget" data-lazy-load="" data-title="" id="1106243893" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="25" data-widget-config="eyJyZXZlcnNlRmxhZyI6dHJ1ZSwiY29weXJpZ2h0VGV4dCI6IjxwIGNsYXNzPVwicnRlQmxvY2tcIj5BbGxlIFJlY2h0ZSB2b3JiZWhhbHRlbiB8IFRob21hcyBLaW5kbGVyIERhY2hkZWNrZXJmYWNoYmV0cmllYiBHbWJIPC9wPjxwIGNsYXNzPVwicnRlQmxvY2tcIj5XZWJzaXRlIERlc2lnbiBieSBNaWNoZWxsZSBLaW5kbGVyPC9wPjxicj48YnI+In0="> <div class="copyright"> <div><p class="rteBlock">Alle Rechte vorbehalten | Thomas Kindler Dachdeckerfachbetrieb GmbH</p><p class="rteBlock">Website Design by Michelle Kindler</p><br/><br/></div> 
+ <div>&nbsp;&copy; 2026</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+
+
+
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~25"] = function (element, data, api) {
+        null
+    };
+</script>
+
+
+<script type="text/javascript">
+
+    var d_version = "production_6860";
+    var build = "2026-10-15T09_00_54";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+
+
+
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+
+
+
+
+<!-- Injecting site-wide before scripts -->
+
+
+<script type="text/javascript" src="https://app.termly.io/resource-blocker/6056bc7a-b9cf-41ba-bbe0-f974fe09c3b8?autoBlock=on" data-swh-uuid="9fef080dfd0f4575b12166c01c67af93">
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" >
+    var _dm_gaq = {};
+    var _gaq = _gaq || [];
+    var _dm_insite = [];
+</script>
+
+
+
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+
+
+
+
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div> <p class=\"rteBlock\">Wir verwenden Cookies und &auml;hnliche Technologien, um den sicheren Betrieb unserer Website zu gew&auml;hrleisten und ausgew&auml;hlte Dienste wie Google Maps, Friendly Captcha sowie die Kontaktaufnahme &uuml;ber WhatsApp bereitzustellen. Mit Ihrer Einwilligung k&ouml;nnen diese Dienste aktiviert werden. Weitere Informationen finden Sie in unserer Datenschutzerkl&auml;rung.<\/p> \n<\/div> \n';
+</script>
+
+
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.build.dist.folder"] = 'production/6860';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/6860';
+    rtCommonProps["common.fonts.api.v2.url"] = 'https://irp.cdn-website.com/fonts/css2?family=';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://irp.cdn-website.com/';
+    rtCommonProps["feature.flag.performance.logs"] =false;
+    rtCommonProps["site.widget.form.captcha.type"] = 'friendly_captcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["termly.mapbox.consent.category"] = 'performance';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.repeatOrderRedirect.enabled"] = false;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.monolith.legacy.js.api.disabled.for.new.sites"] = false;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["runtime.lcp.preload.selfheal.enabled"] =true;
+    rtFlags["runtime.lcp.preload.bootstrap.enabled"] =true;
+    rtFlags["runtime.lcp.preload.monitor.enabled"] =true;
+    rtFlags["runtime.customwidget.heightpin.enabled"] =true;
+    rtFlags["runtime.customwidget.config.compare.enabled"] =false;
+    rtFlags["runtime.video.widget.lazy.enabled"] =true;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/6860/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://static.cdn-website.com/mnlt/production/6860/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+
+
+
+
+
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display:none;" id="P6iryBW0Wu"></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" data-auto="pswp-close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" data-auto="pswp-share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: dc4867de -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup" data-auto="popup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" data-auto="popup-close" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    </script>
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

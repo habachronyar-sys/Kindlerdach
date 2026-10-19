@@ -1,0 +1,84 @@
+{
+  "assets": [
+    {
+      "file": "public/images/kindler-logo.png",
+      "source": "https://irp.cdn-website.com/dc4867de/dms3rep/multi/MediumSquareLogoohneHintergrund.png",
+      "sourcePage": "https://www.kindler-dach.de/",
+      "description": "Original-Logo",
+      "used": true,
+      "downloadedOn": "2026-10-19",
+      "sha256": "29fb3e4c977d2a9ead9c3894f6d157cca16490429657739ad8a51b24c76b062d",
+      "rights": "No license confirmed. Local unpublished demo only. Obtain rights-holder approval including depicted persons before publication."
+    },
+    {
+      "file": "public/images/team-betriebshof.jpg",
+      "source": "https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_20251118142755_0007_V-1920w.JPG",
+      "sourcePage": "https://www.kindler-dach.de/",
+      "description": "Team und Betriebshof",
+      "used": true,
+      "downloadedOn": "2026-10-19",
+      "sha256": "1eae297106b40ac987c1368fd6eb041c9edff85fea82e967fc7c65ca15509799",
+      "rights": "No license confirmed. Local unpublished demo only. Obtain rights-holder approval including depicted persons before publication."
+    },
+    {
+      "file": "public/images/flachdach.jpg",
+      "source": "https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131097-1920w.jpg",
+      "sourcePage": "https://www.kindler-dach.de/galerie",
+      "description": "Flachdachabdichtung",
+      "used": true,
+      "downloadedOn": "2026-10-19",
+      "sha256": "10f4b89afa2dad59ce149822b049d861ffb31f2ea6cefc6b1bbc5410c2edc6ac",
+      "rights": "No license confirmed. Local unpublished demo only. Obtain rights-holder approval including depicted persons before publication."
+    },
+    {
+      "file": "public/images/schiefer.jpg",
+      "source": "https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1649093131588-1920w.jpg",
+      "sourcePage": "https://www.kindler-dach.de/galerie",
+      "description": "Schieferarbeiten",
+      "used": true,
+      "downloadedOn": "2026-10-19",
+      "sha256": "6573440ef4d3e29e89098d46087d07d5aa0d406b7705ec4a201f11583d252521",
+      "rights": "No license confirmed. Local unpublished demo only. Obtain rights-holder approval including depicted persons before publication."
+    },
+    {
+      "file": "public/images/dachfenster.jpg",
+      "source": "https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/1672773812090-1920w.jpg",
+      "sourcePage": "https://www.kindler-dach.de/galerie",
+      "description": "Dachfenster im Innenraum",
+      "used": true,
+      "downloadedOn": "2026-10-19",
+      "sha256": "c1359a7dda2ff0ff5690e8c9e94757a2cb6c4408e246d0d1598d5b32ee206ecb",
+      "rights": "No license confirmed. Local unpublished demo only. Obtain rights-holder approval including depicted persons before publication."
+    },
+    {
+      "file": "public/images/steildach.jpg",
+      "source": "https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0055-1920w.JPG",
+      "sourcePage": "https://www.kindler-dach.de/galerie",
+      "description": "Dacheindeckung und Kaminbekleidung",
+      "used": true,
+      "downloadedOn": "2026-10-19",
+      "sha256": "f94c357496b592b980ba18ffc11ef639f917953b1c3492cfe36e0d19be8a724f",
+      "rights": "No license confirmed. Local unpublished demo only. Obtain rights-holder approval including depicted persons before publication."
+    },
+    {
+      "file": "public/images/dach-detail.jpg",
+      "source": "https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0194-1920w.JPG",
+      "sourcePage": "https://www.kindler-dach.de/galerie",
+      "description": "Luftaufnahme Ziegeldach mit Solarmodulen; keine Solarleistung behauptet",
+      "used": true,
+      "downloadedOn": "2026-10-19",
+      "sha256": "99e6f870ec76e480a869cb43741ca315280a64e257bda78ee14835d727931c4c",
+      "rights": "No license confirmed. Local unpublished demo only. Obtain rights-holder approval including depicted persons before publication."
+    },
+    {
+      "file": "public/images/ziegeldach.jpg",
+      "source": "https://irp.cdn-website.com/dc4867de/dms3rep/multi/opt/DJI_0064-1920w.JPG",
+      "sourcePage": "https://www.kindler-dach.de/galerie",
+      "description": "Dacharbeiten an einer Gaube",
+      "used": true,
+      "downloadedOn": "2026-10-19",
+      "sha256": "44177f476962a3b18bf2ac913337e92ed2379b0f1d31f40765008ae12f5aa6ec",
+      "rights": "No license confirmed. Local unpublished demo only. Obtain rights-holder approval including depicted persons before publication."
+    }
+  ]
+}
