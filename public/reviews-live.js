@@ -79,17 +79,22 @@
   function validData(data) {
     return data?.source === 'google-business-profile' && data.complete === true && Array.isArray(data.reviews) && Number.isFinite(data.averageRating) && data.averageRating >= 0 && data.averageRating <= 5 && Number.isInteger(data.totalReviewCount) && data.totalReviewCount >= 0 && Number.isFinite(Date.parse(data.fetchedAt)) && data.reviews.every(review => typeof review.author === 'string' && typeof review.text === 'string' && Number.isInteger(review.rating) && review.rating >= 1 && review.rating <= 5);
   }
+  function stopPolling() {
+    clearInterval(timer);
+    document.removeEventListener('visibilitychange', onVisibilityChange);
+  }
   async function refresh() {
     if (requestPending || document.hidden) return;
     requestPending = true;
     try {
       const response = await fetch('/api/reviews', { cache: 'no-store', signal: AbortSignal.timeout(15_000) });
       if (!response.ok) {
+        if (response.status === 404 || response.status === 405) stopPolling();
         if (response.status === 503) {
           const error = await response.json();
           if (error.code === 'GOOGLE_NOT_CONFIGURED') {
             // No needless polling before a real account connection exists.
-            clearInterval(timer);
+            stopPolling();
             if (!hasGoogleData) connectionLabel.textContent = '3 verfügbare Auszüge · Google-Verbindung noch nicht freigegeben';
           }
         }
@@ -120,7 +125,11 @@
     } finally { requestPending = false; }
   }
   // Initial fetching is same-origin: no visitor data goes to Google.
-  timer = setInterval(refresh, 30_000);
-  document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
-  refresh();
+  function onVisibilityChange() { if (!document.hidden) refresh(); }
+  // Live reviews stay off unless a deployment explicitly opts in.
+  if (document.documentElement.dataset.reviewsApi === 'enabled') {
+    timer = setInterval(refresh, 30_000);
+    document.addEventListener('visibilitychange', onVisibilityChange);
+    refresh();
+  }
 })();

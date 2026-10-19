@@ -1,5 +1,7 @@
 /* Softer forms, warmer surfaces and more space around the photography. */
 :root{--paper:#f8f7f4;--red:#bd2429;--line:#e6e4de}
+/* Fit the complete logo lettering inside the existing header. */
+.brand{height:90px}.brand img{width:180px;height:180px}
 .button{border-radius:999px;padding-inline:25px;box-shadow:0 5px 14px #62101410}
 .button:hover{box-shadow:0 7px 19px #62101421}
 .button-small{padding-inline:22px}
@@ -80,6 +82,7 @@ dialog{border-radius:22px;box-shadow:0 25px 90px #0008}
 @media(min-width:1600px){.hero-content{padding-top:80px}}
 @media(max-width:1100px){.reviews{padding:32px 25px 25px}.reviews-heading h2{font-size:29px}.reviews-overview{gap:18px}.reviews-connection{max-width:250px}.review-carousel>.review{padding:23px}.about-copy{padding-right:32px}}
 @media(max-width:760px){
+  .brand{height:74px}.brand img{width:148px;height:148px}
   .hero{margin:10px 10px 0;border-radius:23px}.hero-content{padding-top:38px}
   .hero-tag.google-rating{margin-inline:20px;border-radius:19px;padding:17px 20px}
   .hero-actions{gap:13px}.hero-actions .button{min-height:50px}

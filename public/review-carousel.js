@@ -17,6 +17,18 @@
   let travel = 0;
   let dragX = 0;
   let dragScroll = 0;
+  let animationFrame = 0;
+  let resumeTimer;
+
+  function canAnimate() {
+    return cycleWidth && visible && !document.hidden && !paused && !hovering && !focused && !dragging && performance.now() >= resumeAt;
+  }
+  function wake() {
+    cancelAnimationFrame(animationFrame);
+    animationFrame = 0;
+    previousTime = 0;
+    if (canAnimate()) animationFrame = requestAnimationFrame(animate);
+  }
 
   // Identical copies provide the seam, without inventing extra reviews.
   // Assistive technology only reads the three original cards.
@@ -42,16 +54,23 @@
     const fraction = cycleWidth ? ((track.scrollLeft % cycleWidth) + cycleWidth) % cycleWidth / cycleWidth : 0;
     cycleWidth = newWidth;
     track.scrollLeft = cycleWidth * (1 + fraction);
+    wake();
   }
   function wrap() {
     if (!cycleWidth || dragging) return;
     if (track.scrollLeft < cycleWidth * 0.5) track.scrollLeft += cycleWidth;
     else if (track.scrollLeft >= cycleWidth * 1.5) track.scrollLeft -= cycleWidth;
   }
-  function rest() { resumeAt = performance.now() + 4500; }
+  function rest() {
+    resumeAt = performance.now() + 4500;
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(wake, 4501);
+    wake();
+  }
   function updatePauseButton() {
     pauseButton.setAttribute('aria-pressed', String(paused));
     pauseButton.textContent = paused ? 'Laufband starten' : 'Laufband pausieren';
+    wake();
   }
   pauseButton.addEventListener('click', () => {
     paused = !paused;
@@ -75,9 +94,9 @@
       step(event.key === 'ArrowRight' ? 1 : -1);
     }
   });
-  track.addEventListener('mouseenter', () => { hovering = true; });
-  track.addEventListener('mouseleave', () => { hovering = false; });
-  track.addEventListener('focusin', () => { focused = true; });
+  track.addEventListener('mouseenter', () => { hovering = true; wake(); });
+  track.addEventListener('mouseleave', () => { hovering = false; wake(); });
+  track.addEventListener('focusin', () => { focused = true; wake(); });
   track.addEventListener('focusout', () => { focused = false; rest(); });
   track.addEventListener('wheel', event => {
     rest();
@@ -122,11 +141,13 @@
   });
   new IntersectionObserver(entries => {
     visible = entries[0].isIntersecting;
+    wake();
   }).observe(track);
+  document.addEventListener('visibilitychange', wake);
   function animate(time) {
     const elapsed = previousTime ? Math.min(time - previousTime, 50) : 0;
     previousTime = time;
-    if (cycleWidth && visible && !document.hidden && !paused && !hovering && !focused && !dragging && time > resumeAt) {
+    if (canAnimate()) {
       // Decreasing scrollLeft makes the cards travel from left to right.
       travel += elapsed * 0.028;
       const pixels = Math.floor(travel);
@@ -134,9 +155,9 @@
       travel -= pixels;
       wrap();
     }
-    requestAnimationFrame(animate);
+    animationFrame = canAnimate() ? requestAnimationFrame(animate) : 0;
   }
   measure();
   updatePauseButton();
-  requestAnimationFrame(animate);
+  wake();
 })();

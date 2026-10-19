@@ -23,10 +23,19 @@ for (const page of pages) {
       assert(destination.includes(`id="${hash}"`),`${page}: defektes Sprungziel ${url}`);
     }
   }
+  for (const match of html.matchAll(/\bsrcset="([^"]+)"/g)) {
+    for (const candidate of match[1].split(',')) {
+      const [url, descriptor] = candidate.trim().split(/\s+/);
+      assert(/^\d+w$/.test(descriptor), `${page}: ungültige Bildbreite`);
+      await fs.access(`public${url}`);
+      refs++;
+    }
+  }
 }
 for (const name of await fs.readdir('public/images')) {
   const data = await fs.readFile(`public/images/${name}`);
   assert(data.length > 1000, `Bilddatei zu klein: ${name}`);
-  assert(name.endsWith('.png') ? data.readUInt32BE(0) === 0x89504e47 : data[0] === 255 && data[1] === 216, `Ungültiges Bild: ${name}`);
+  const valid = name.endsWith('.png') ? data.readUInt32BE(0) === 0x89504e47 : name.endsWith('.webp') ? data.toString('ascii', 0, 4) === 'RIFF' && data.toString('ascii', 8, 12) === 'WEBP' : data[0] === 255 && data[1] === 216;
+  assert(valid, `Ungültiges Bild: ${name}`);
 }
 console.log(`Prüfung erfolgreich: ${pages.length} Seiten, ${refs} lokale Verweise, Bilddateien und Sprungziele.`);

@@ -23,9 +23,9 @@ Anschließend http://localhost:4173 öffnen. Beenden mit Strg+C. Alternativ `npm
 
 Ergänzung: Bewertungsanzeige im Hero und drei kurze Rezensionsauszüge direkt unter der Vertrauensleiste. Google-Profil verlinkt, Quellen und Stand sichtbar; statische Anzeige ohne Google-Widget. Recherche und Einschränkungen in `research/BEWERTUNGEN.md`. Der lokale Server liefert Änderungen nach Neuladen aus.
 
-Die drei Auszüge laufen als kreisendes Laufband von links nach rechts. Manuelle Bedienung per horizontalem Scrollen, Mausrad über dem Laufband, Mausziehen, Touch-Wischen, Pfeiltasten und Navigationsbuttons. Die Bewegung pausiert beim Darüberfahren und Tastaturfokus sowie während manueller Bedienung. Ein Pause-/Startknopf steuert die automatische Bewegung; bei aktivierter Systemeinstellung für reduzierte Bewegung startet sie pausiert. Identische, für Screenreader ausgeblendete Kopien sorgen für den nahtlosen Umlauf; es werden dadurch keine zusätzlichen Rezensionen behauptet. Implementierung in `public/review-carousel.js`. Browserprüfung bleibt ausstehend.
+Die drei Auszüge laufen als kreisendes Laufband von links nach rechts. Manuelle Bedienung per horizontalem Scrollen, Mausrad über dem Laufband, Mausziehen, Touch-Wischen, Pfeiltasten und Navigationsbuttons. Die Bewegung pausiert beim Darüberfahren und Tastaturfokus sowie während manueller Bedienung. Ein Pause-/Startknopf steuert die automatische Bewegung; bei aktivierter Systemeinstellung für reduzierte Bewegung startet sie pausiert. Identische, für Screenreader ausgeblendete Kopien sorgen für den nahtlosen Umlauf; es werden dadurch keine zusätzlichen Rezensionen behauptet. Implementierung in `public/review-carousel.js`. Aktuelle Browserprüfungen sind unten dokumentiert.
 
-Neu: weichere Gestaltung über `public/refinements.css` mit gerundeten Bildern, Karten und Buttons sowie Gesamtansicht aller aktuell verfügbaren Rezensionen. `public/reviews-live.js` und `server/google-reviews.mjs` bereiten die vollständige Google-Synchronisierung vor. **Noch nicht mit Google verbunden**, weil kein Inhaber-/Administratorzugriff vorhanden ist. Deshalb weiterhin nur die drei klar gekennzeichneten Verzeichnisauszüge. Kein erfolgreicher Live-Abruf behauptet. Die spätere Verbindung liest alle API-Folgeseiten und aktualisiert die sichtbare Website alle 30 Sekunden. Aktivierung, Voraussetzungen und Grenzen: `research/GOOGLE-ANBINDUNG.md`. Ein rein statisches Hosting von `dist/` unterstützt diese Serverroute nicht.
+Neu: weichere Gestaltung über `public/refinements.css` mit gerundeten Bildern, Karten und Buttons sowie Gesamtansicht aller aktuell verfügbaren Rezensionen. `public/reviews-live.js` und `server/google-reviews.mjs` enthalten eine vorbereitete Google-Synchronisierung. **Sie ist standardmäßig deaktiviert**; die Browserabfrage startet nur, wenn die HTML-Seite ausdrücklich `data-reviews-api="enabled"` setzt und ein geeignetes Backend eingerichtet ist. Im aktuellen Projektstand ist sie nicht aktiviert und es findet kein Live-Abruf statt. Deshalb bleiben die gekennzeichneten Verzeichnisauszüge sichtbar. Aktivierung, Voraussetzungen und Grenzen: `research/GOOGLE-ANBINDUNG.md`. Ein rein statisches Hosting von `dist/` unterstützt diese Serverroute nicht.
 
 - `index.html`: Header, Hero, belegte Leistungen, Leistungs-Accordion, Unternehmensvorstellung, Galerie, Kontaktbereich und Footer.
 - `public/styles.css`: Rot/Anthrazit aus dem Original-Logo, responsive Layouts, sichtbare Fokuszustände und reduzierte Animation bei entsprechender Systemeinstellung; Systemschriften ohne externe Anfragen.
@@ -40,19 +40,27 @@ Telefonlinks und E-Mail-Links enthalten die belegten Originaldaten. Das Formular
 
 ## Prüfungen
 
+Der aktuelle Performance- und Prüfbericht steht in `PERFORMANCE-BERICHT.md`.
+Nach dem Klonen installiert `npm ci` die Entwicklungswerkzeuge. Die Website
+bleibt ohne Framework und ohne JavaScript-Abhängigkeiten im Browser.
+Neue Fotos werden mit `npm run images:optimize` in responsive WebP-Varianten
+umgerechnet; die Originale bleiben erhalten. Danach `npm run check` und
+`npm run build` ausführen. Die Varianten werden mit versioniert, damit der
+Cloudflare-Build keine Bildkonvertierung benötigt.
+
 ```powershell
 node scripts/check.mjs
 node --check public/app.js
 node --check scripts/serve.mjs
 node scripts/build.mjs
-node --test server/google-reviews.test.mjs
+npm.cmd test
 # Während der lokale Server läuft:
 node scripts/smoke.mjs
 ```
 
 Erfolgreich geprüft: drei HTML-Seiten, lokale Bild-/Dateiverweise, interne Sprungziele, eindeutige IDs, deutsche Seitensprache, einzelne H1 pro Seite, Demo-Indexierungsschutz, Bilddateisignaturen, JavaScript-Syntax, statischer Build und HTTP-Auslieferung einschließlich Schutz der Recherche- und Projektdateien.
 
-**Verifikationsgrenze:** Die Browser-Inventarliste war leer; das Öffnen der In-App-Vorschau meldete „Browser is not available: iab“. Daher keine tatsächlich durchgeführte visuelle Desktop-/Mobilprüfung, kein Konsolencheck und keine Browser-Interaktionstests. Mobile Menübedienung, Dialogfokus, Formulare, Bildausschnitte und Überläufe sind vor Präsentation in einem echten Browser zu prüfen. Responsive Regeln sind für kleine Smartphones, Tablets und Desktop implementiert. Keine aus den ausgeführten Prüfungen bekannten technischen Fehler; dies ist keine Aussage über noch ungeprüftes Browserverhalten.
+**Browserprüfung am 19.10.2026:** Der statische Produktionsbuild wurde mit lokalem Wrangler und Headless-Brave bei 320, 375, 768, 1024 und 1440 Pixeln geprüft. Menü, Escape-Taste, Galerie, Formularvalidierung, Entwurfserstellung und Entwurfsänderung, Bewertungsübersicht sowie beide Rechtstextseiten funktionieren in diesen Prüfungen. Alle Seitenbilder wurden nach Scrollen geladen; kein horizontaler Seitenüberlauf, keine Konsolenfehler im statischen Build. Die Animation wurde zusätzlich auf Bewegung, Pausieren, Sichtbarkeit und reduzierte Bewegung geprüft. Echte Mobilgeräte, andere Browser und das veröffentlichte Cloudflare-System bleiben offen. Lighthouse-Ergebnisse und Messgrenzen: `PERFORMANCE-BERICHT.md`.
 
 ## Vor Veröffentlichung
 
