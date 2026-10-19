@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="same-origin">
+  <title>Anfragen verwalten · Kindler Dach</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/admin.css">
+  <script src="/admin.js" defer></script>
+</head>
+<body data-page="dashboard">
+  <header class="admin-header" hidden data-admin-content>
+    <a class="admin-brand" href="/" aria-label="Kindler Dach, Startseite">KINDLER<span>DACH.</span></a>
+    <div class="admin-header-actions">
+      <span id="admin-identity" class="admin-identity"></span>
+      <button id="sign-out" class="button button-quiet" type="button">Abmelden</button>
+    </div>
+  </header>
+  <p id="dashboard-status" class="notice" role="status" aria-live="polite">Zugriff wird geprüft …</p>
+  <noscript>Bitte aktivieren Sie JavaScript und melden Sie sich an, um Anfragen zu verwalten.</noscript>
+  <main class="admin-main" hidden data-admin-content>
+    <div class="admin-heading">
+      <div><p class="eyebrow">INHABERBEREICH</p><h1>Anfragen im Blick.</h1></div>
+      <button id="refresh-requests" class="button button-light" type="button">Aktualisieren <span aria-hidden="true">↻</span></button>
+    </div>
+    <nav class="admin-nav" aria-label="Dashboard-Navigation">
+      <button type="button" data-view="all" aria-current="page">Dashboard</button>
+      <button type="button" data-view="active">Kontaktanfragen</button>
+      <button type="button" data-view="archive">Archiv</button>
+    </nav>
+    <section class="stats" aria-label="Anfrageübersicht">
+      <article class="stat-card"><span>Neue Anfragen</span><strong id="stat-new">—</strong></article>
+      <article class="stat-card"><span>Offene Anfragen</span><strong id="stat-open">—</strong></article>
+      <article class="stat-card"><span>Gesamt</span><strong id="stat-total">—</strong></article>
+    </section>
+    <section class="requests-panel">
+      <div class="panel-heading">
+        <div><p class="eyebrow">EINGEGANGEN</p><h2 id="requests-heading">Kontaktanfragen</h2></div>
+        <div class="table-tools">
+          <label class="search-label" for="request-search">Suchen</label>
+          <input id="request-search" type="search" placeholder="Name, Betreff, Kontakt …" autocomplete="off">
+          <label class="search-label" for="status-filter">Status</label>
+          <select id="status-filter">
+            <option value="all">Alle</option>
+            <option value="new">Neu</option>
+            <option value="in_progress">In Bearbeitung</option>
+            <option value="done">Erledigt</option>
+            <option value="archived">Archiviert</option>
+          </select>
+        </div>
+      </div>
+      <p id="requests-empty" class="empty-state" hidden>Noch keine Kontaktanfragen vorhanden.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Eingangsdatum</th><th>Name</th><th>Betreff</th><th>Kontaktmöglichkeit</th><th>Status</th><th><span class="visually-hidden">Aktion</span></th></tr></thead>
+          <tbody id="requests-table"></tbody>
+        </table>
+      </div>
+    </section>
+    <p class="admin-disclaimer">Statusänderungen werden in Supabase gespeichert, benachrichtigen den Kunden aber nicht automatisch. Neue Terminanfragen werden nicht angezeigt, da die Website derzeit kein Terminformular anbietet.</p>
+  </main>
+  <dialog id="request-detail" aria-labelledby="detail-name">
+    <div class="dialog-heading"><div><p class="eyebrow">ANFRAGEDETAILS</p><h2 id="detail-name"></h2></div><button id="close-detail" class="icon-button" type="button" aria-label="Schließen">×</button></div>
+    <p id="detail-date" class="detail-date"></p>
+    <dl class="detail-list">
+      <div><dt>Betreff</dt><dd id="detail-subject"></dd></div>
+      <div><dt>E-Mail</dt><dd id="detail-email"></dd></div>
+      <div><dt>Telefon</dt><dd id="detail-phone"></dd></div>
+      <div><dt>Nachricht</dt><dd id="detail-message" class="detail-message"></dd></div>
+    </dl>
+    <p id="detail-status" class="notice" role="status" aria-live="polite"></p>
+    <div class="detail-actions">
+      <label for="detail-status-select">Bearbeitungsstatus</label>
+      <select id="detail-status-select">
+        <option value="new">Neu</option>
+        <option value="in_progress">In Bearbeitung</option>
+        <option value="done">Erledigt</option>
+        <option value="archived">Archiviert</option>
+      </select>
+      <button id="save-status" class="button" type="button">Status speichern</button>
+      <button id="mark-read" class="button button-light" type="button">Als gelesen markieren</button>
+      <button id="delete-request" class="button button-danger" type="button">Anfrage löschen</button>
+    </div>
+  </dialog>
+</body>
+</html>

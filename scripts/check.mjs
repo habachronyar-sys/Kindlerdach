@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const pages = ['index.html','impressum.html','datenschutz.html','cookie-einstellungen.html'];
+const pages = ['index.html','impressum.html','datenschutz.html','cookie-einstellungen.html','admin.html','admin-login.html','admin-forgot-password.html','admin-reset-password.html'];
 let refs = 0;
 for (const page of pages) {
   const html = await fs.readFile(page, 'utf8');
@@ -13,9 +13,11 @@ for (const page of pages) {
     const url = match[1];
     if (/^(https?:|mailto:|tel:)/.test(url)) continue;
     const [file,hash] = url.split('#');
-    const target = !file || file === '/' ? 'index.html' : file.slice(1);
+    const routePages = { '/admin': 'admin.html', '/admin/login': 'admin-login.html', '/admin/forgot-password': 'admin-forgot-password.html', '/admin/reset-password': 'admin-reset-password.html' };
+    const target = routePages[file] || (!file || file === '/' ? 'index.html' : file.slice(1));
     if (file && file !== '/') {
-      await fs.access(pages.includes(target) ? target : `public/${target}`);
+      const assetPath = target === 'admin.js' ? 'admin/admin.js' : target === 'password.js' ? 'admin/password.js' : `public/${target}`;
+      await fs.access(pages.includes(target) ? target : assetPath);
       refs++;
     }
     if (hash) {

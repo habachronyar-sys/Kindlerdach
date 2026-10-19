@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-const origin = 'http://127.0.0.1:4173';
-const urls = new Set(['/','/impressum.html','/datenschutz.html']);
+const origin = `http://127.0.0.1:${process.env.PORT || 4173}`;
+const urls = new Set(['/','/impressum.html','/datenschutz.html','/admin','/admin/','/admin/login','/admin/login/','/admin/forgot-password','/admin/forgot-password/','/admin/reset-password','/admin/reset-password/','/admin.js','/password.js','/api/config']);
 for (const file of ['index.html','impressum.html','datenschutz.html']) {
   const html = await fs.readFile(file, 'utf8');
   for (const m of html.matchAll(/(?:src|href)="(\/[^"#]*)"/g)) if (!m[1].includes('#')) urls.add(m[1]);

@@ -17,17 +17,28 @@ test('new static builds remove stale output and exclude project files', async ()
   for (const name of ['steildach.jpg', 'dachfenster.jpg', 'schiefer.jpg']) await fs.access(`dist/images/${name}`);
 });
 
-test('static hosting disables the unavailable API while source retains server support', async () => {
+test('the build includes the protected admin shell and bundled client', async () => {
+  await fs.access('dist/admin.html');
+  await fs.access('dist/admin-login.html');
+  await fs.access('dist/admin.js');
+  await fs.access('dist/password.js');
+  await fs.access('dist/admin-forgot-password.html');
+  await fs.access('dist/admin-reset-password.html');
+  assert((await fs.readFile('dist/admin.html', 'utf8')).includes('id="requests-table"'));
+});
+
+test('static hosting disables the unavailable reviews API while source retains server support', async () => {
   assert((await fs.readFile('dist/index.html', 'utf8')).includes('data-reviews-api="disabled"'));
   assert(!(await fs.readFile('index.html', 'utf8')).includes('data-reviews-api="disabled"'));
 });
 
 test('every local page, image, responsive candidate and preload exists in the static output', async () => {
-  for (const name of ['index.html', 'impressum.html', 'datenschutz.html', 'cookie-einstellungen.html']) {
+  for (const name of ['index.html', 'impressum.html', 'datenschutz.html', 'cookie-einstellungen.html', 'admin.html', 'admin-login.html', 'admin-forgot-password.html', 'admin-reset-password.html']) {
     const html = await fs.readFile(`dist/${name}`, 'utf8');
     for (const match of html.matchAll(/\b(?:src|href|data-image)="(\/[^"#]*)"/g)) {
       if (match[1] === '/' || match[1].includes('#')) continue;
-      await fs.access(`dist${match[1]}`);
+      const routes = { '/admin/login': '/admin-login.html', '/admin/forgot-password': '/admin-forgot-password.html', '/admin/reset-password': '/admin-reset-password.html' };
+      await fs.access(`dist${routes[match[1]] || match[1]}`);
     }
     for (const match of html.matchAll(/\b(?:image)?srcset="([^"]+)"/g)) {
       for (const candidate of match[1].split(',')) await fs.access(`dist${candidate.trim().split(/\s+/)[0]}`);

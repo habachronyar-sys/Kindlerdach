@@ -4,14 +4,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/serve.mjs",
-    "start": "node scripts/serve.mjs",
+    "setup:local": "node scripts/setup-local.mjs",
+    "diagnose": "node scripts/diagnose.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "start": "node scripts/build.mjs && node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "images:optimize": "node scripts/optimize-images.mjs",
     "check": "node scripts/check.mjs",
-    "test": "node --test server/google-reviews.test.mjs scripts/build.test.mjs"
+    "test": "node --test server/google-reviews.test.mjs server/intake.test.mjs server/worker.test.mjs admin/admin.test.mjs admin/password.test.mjs scripts/setup-local.test.mjs scripts/build.test.mjs"
   },
   "devDependencies": {
-    "sharp": "^0.35.5"
+    "esbuild": "^0.28.2",
+    "sharp": "^0.35.5",
+    "wrangler": "^4.151.2"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0"
   }
 }

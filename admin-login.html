@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="same-origin">
+  <title>Anmeldung · Kindler Dach</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/admin.css">
+  <script src="/admin.js" defer></script>
+</head>
+<body data-page="login">
+  <main class="login-wrap">
+    <a class="admin-brand" href="/" aria-label="Kindler Dach, Startseite">KINDLER<span>DACH.</span></a>
+    <section class="login-card">
+      <p class="eyebrow">GESCHÜTZTER INHABERBEREICH</p>
+      <h1>Anmelden.</h1>
+      <p class="login-intro">Melden Sie sich mit dem für Kindler Dach freigeschalteten Supabase-Konto an.</p>
+      <form id="login-form">
+        <label for="login-email">E-Mail-Adresse</label>
+        <input id="login-email" name="email" type="email" autocomplete="username" required maxlength="254">
+        <label for="login-password">Passwort</label>
+        <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+        <p id="login-status" class="notice" role="status" aria-live="polite"></p>
+        <button class="button" type="submit" disabled>Anmelden <span aria-hidden="true">↗</span></button>
+      </form>
+      <a class="back-home" href="/admin/forgot-password">Passwort vergessen?</a>
+      <p class="login-intro">Den ersten Zugang richtet der Inhaber im Supabase-Dashboard ein. Eine öffentliche Registrierung gibt es hier nicht.</p>
+      <noscript>Bitte aktivieren Sie JavaScript, um sich anzumelden.</noscript>
+      <a class="back-home" href="/">Zurück zur Website</a>
+    </section>
+  </main>
+</body>
+</html>

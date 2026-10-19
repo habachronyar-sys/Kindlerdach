@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { build } from 'esbuild';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const output = path.join(root, 'dist');
 if (path.dirname(output) !== path.resolve(root)) throw new Error('Invalid build directory');
@@ -17,4 +18,24 @@ await fs.cp(path.join(root, 'public'), output, {
   // Keep full-size originals used by the lightbox, but do not ship unused JPEGs.
   filter: source => !source.endsWith('.jpg') || pages.includes(`/images/${path.basename(source)}`),
 });
-console.log('Build erfolgreich: dist/ (statische Website, keine Abhängigkeiten).');
+await build({
+  absWorkingDir: root,
+  // No TypeScript configuration is needed; avoid searching parent directories.
+  tsconfigRaw: {},
+  entryPoints: {
+    admin: path.join(root, 'admin/admin.js'),
+    password: path.join(root, 'admin/password.js'),
+  },
+  outdir: output,
+  bundle: true,
+  format: 'iife',
+  platform: 'browser',
+  target: ['es2022'],
+  minify: true,
+  legalComments: 'none',
+});
+await fs.copyFile(path.join(root, 'admin.html'), path.join(output, 'admin.html'));
+await fs.copyFile(path.join(root, 'admin-login.html'), path.join(output, 'admin-login.html'));
+await fs.copyFile(path.join(root, 'admin-forgot-password.html'), path.join(output, 'admin-forgot-password.html'));
+await fs.copyFile(path.join(root, 'admin-reset-password.html'), path.join(output, 'admin-reset-password.html'));
+console.log('Build erfolgreich: dist/ (statische Website und gebündeltes Admin-Frontend).');

@@ -37,6 +37,7 @@ textarea{border-radius:14px}
 .back-top{border-radius:50%}
 dialog{border-radius:22px;box-shadow:0 25px 90px #0008}
 .legal .legal-note{border-radius:14px}
+.honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 
 /* Reviews have their own calm, rounded surface instead of a row of boxes. */
 .reviews{padding:42px 34px 28px;margin-top:12px;border-radius:32px;background:linear-gradient(135deg,#eeeae3,#f0eee8 55%,#eee9e2);border:1px solid #e6e1d7}

@@ -41,18 +41,18 @@ lightbox?.addEventListener('click', event => {
 
 const form = document.querySelector('#contact-form');
 const status = document.querySelector('#form-status');
-const draftLink = document.querySelector('#email-draft');
 document.querySelectorAll('[data-service]').forEach(link => {
   link.addEventListener('click', () => { document.querySelector('#service').value = link.dataset.service; });
 });
 function validate(field) {
   let error = '';
-  if (!field.value.trim()) error = field.id === 'message' ? 'Bitte beschreiben Sie kurz Ihr Vorhaben.' : field.id === 'email' ? 'Bitte geben Sie Ihre E-Mail-Adresse ein.' : 'Bitte geben Sie Ihren Namen ein.';
-  else if (field.id === 'email' && !field.validity.valid) error = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+  if (field.id === 'name' && !field.value.trim()) error = 'Bitte geben Sie Ihren Namen ein.';
+  else if (field.id === 'email' && field.value.trim() && !field.validity.valid) error = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
   else if (field.id === 'message' && field.value.trim().length < 10) error = 'Bitte beschreiben Sie Ihr Vorhaben mit mindestens 10 Zeichen.';
   field.setAttribute('aria-invalid', String(Boolean(error)));
   field.setAttribute('aria-describedby', `${field.id}-error`);
-  document.querySelector(`#${field.id}-error`).textContent = error;
+  const errorMessage = document.querySelector(`#${field.id}-error`);
+  if (errorMessage) errorMessage.textContent = error;
   return !error;
 }
 form?.querySelectorAll('[required]').forEach(field => {
@@ -60,11 +60,9 @@ form?.querySelectorAll('[required]').forEach(field => {
   field.addEventListener('input', () => { if (field.getAttribute('aria-invalid') === 'true') validate(field); });
 });
 form?.addEventListener('input', () => {
-  draftLink.hidden = true;
-  draftLink.removeAttribute('href');
   status.textContent = '';
 });
-form?.addEventListener('submit', event => {
+form?.addEventListener('submit', async event => {
   event.preventDefault();
   const fields = [...form.querySelectorAll('[required]')];
   const results = fields.map(validate);
@@ -73,9 +71,56 @@ form?.addEventListener('submit', event => {
     status.textContent = 'Bitte prüfen Sie die markierten Felder.';
     return;
   }
-  const data = new FormData(form);
-  const text = `Guten Tag,\r\n\r\n${data.get('message').trim()}\r\n\r\nAnfrage: ${data.get('service')}\r\nName: ${data.get('name').trim()}\r\nE-Mail: ${data.get('email').trim()}\r\nTelefon: ${data.get('phone').trim() || 'Nicht angegeben'}\r\n`;
-  draftLink.href = `mailto:kindler-dach@gmx.de?subject=${encodeURIComponent(`Dachanfrage: ${data.get('service')}`)}&body=${encodeURIComponent(text)}`;
-  draftLink.hidden = false;
-  status.textContent = 'Ihr Entwurf ist vorbereitet. Öffnen Sie jetzt Ihr E-Mail-Programm, prüfen Sie die Nachricht und senden Sie sie dort ab. Es wurde noch keine Nachricht versendet. Falls kein E-Mail-Programm eingerichtet ist, schreiben Sie direkt an kindler-dach@gmx.de.';
+  const phone = form.elements.phone;
+  const email = form.elements.email;
+  const emailValid = !email.value.trim() || email.validity.valid;
+  const phoneValid = !phone.value.trim() || (/^\+?[0-9][0-9\s()./-]{5,38}$/.test(phone.value.trim()) && phone.value.replace(/\D/g, '').length >= 6);
+  email.setAttribute('aria-invalid', String(!emailValid));
+  document.querySelector('#email-error').textContent = emailValid ? '' : 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+  phone.setAttribute('aria-invalid', String(!phoneValid));
+  document.querySelector('#phone-error').textContent = phoneValid ? '' : 'Bitte prüfen Sie die Telefonnummer.';
+  if (!emailValid || !phoneValid || (!phone.value.trim() && !email.value.trim())) {
+    if (!phone.value.trim() && !email.value.trim()) status.textContent = 'Bitte geben Sie mindestens eine Telefonnummer oder E-Mail-Adresse an.';
+    else if (!emailValid) status.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+    else status.textContent = 'Bitte prüfen Sie die Telefonnummer.';
+    if (!emailValid) email.focus();
+    else if (!phoneValid) phone.focus();
+    else email.focus();
+    return;
+  }
+  const button = form.querySelector('button[type="submit"]');
+  const controls = [...form.querySelectorAll('input,select,textarea,button')];
+  const payload = Object.fromEntries(new FormData(form));
+  controls.forEach(control => { control.disabled = true; });
+  button.disabled = true;
+  status.textContent = 'Ihre Anfrage wird sicher übermittelt …';
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(15_000),
+    });
+    let result;
+    try {
+      result = await response.json();
+    } catch {
+      throw new Error(response.status === 404 || response.status === 405
+        ? 'Der Formularservice ist unter dieser Adresse nicht verfügbar. Bitte kontaktieren Sie uns telefonisch.'
+        : 'Die Serverantwort konnte nicht geprüft werden.');
+    }
+    if (!response.ok || result.ok !== true) throw new Error(result.error || 'Die Anfrage konnte nicht gespeichert werden.');
+    form.reset();
+    form.querySelectorAll('[aria-invalid]').forEach(field => field.removeAttribute('aria-invalid'));
+    form.querySelectorAll('.field-error').forEach(message => { message.textContent = ''; });
+    status.textContent = 'Vielen Dank. Ihre Anfrage wurde gespeichert. Der Betrieb meldet sich über Ihre angegebene Kontaktmöglichkeit.';
+  } catch (error) {
+    status.textContent = ['TimeoutError', 'AbortError'].includes(error.name)
+      ? 'Der Server antwortet zu langsam. Die Speicherung ist unklar. Bitte kontaktieren Sie uns telefonisch, bevor Sie erneut senden. Ihre Eingaben bleiben erhalten.'
+      : error instanceof TypeError
+      ? 'Der Server ist derzeit nicht erreichbar. Ihre Eingaben bleiben erhalten – bitte versuchen Sie es später erneut.'
+      : `${error.message} Ihre Eingaben bleiben erhalten – bitte versuchen Sie es erneut.`;
+  } finally {
+    controls.forEach(control => { control.disabled = false; });
+  }
 });
