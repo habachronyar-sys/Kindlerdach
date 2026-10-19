@@ -23,7 +23,7 @@ test('static hosting disables the unavailable API while source retains server su
 });
 
 test('every local page, image, responsive candidate and preload exists in the static output', async () => {
-  for (const name of ['index.html', 'impressum.html', 'datenschutz.html']) {
+  for (const name of ['index.html', 'impressum.html', 'datenschutz.html', 'cookie-einstellungen.html']) {
     const html = await fs.readFile(`dist/${name}`, 'utf8');
     for (const match of html.matchAll(/\b(?:src|href|data-image)="(\/[^"#]*)"/g)) {
       if (match[1] === '/' || match[1].includes('#')) continue;

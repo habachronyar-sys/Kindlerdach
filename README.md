@@ -30,7 +30,7 @@ Neu: weichere Gestaltung über `public/refinements.css` mit gerundeten Bildern, 
 - `index.html`: Header, Hero, belegte Leistungen, Leistungs-Accordion, Unternehmensvorstellung, Galerie, Kontaktbereich und Footer.
 - `public/styles.css`: Rot/Anthrazit aus dem Original-Logo, responsive Layouts, sichtbare Fokuszustände und reduzierte Animation bei entsprechender Systemeinstellung; Systemschriften ohne externe Anfragen.
 - `public/app.js`: mobiles Menü mit Escape und Schließen nach Navigation, native modale Bildansicht mit Tastaturbedienung, Leistungs-Vorauswahl und Formularvalidierung.
-- `impressum.html`, `datenschutz.html`: erreichbare, als Demo gekennzeichnete Anbieterangaben und technische Datenschutzhinweise; keine abschließend geprüften Rechtstexte.
+- `impressum.html`, `datenschutz.html`: erreichbare, als Demo gekennzeichnete Anbieterangaben und technische Datenschutzhinweise; keine abschließend geprüften Rechtstexte. `cookie-einstellungen.html` erläutert, dass im geprüften Code keine konfigurierten optionalen Cookies/Dienste existieren und deshalb derzeit keine Auswahloberfläche bereitgestellt wird.
 - `public/images/`: acht lokal gespeicherte Originaldateien einschließlich Logo. Herkunft und offene Rechte in `research/assets.json`.
 - `scripts/`: lokaler Server, Build und technische Prüfungen.
 - `research/`: öffentlich abgerufene Originalseiten, Quellenregister und Analyse. Wird nicht veröffentlicht oder vom lokalen Server ausgeliefert.

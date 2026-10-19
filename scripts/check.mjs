@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const pages = ['index.html','impressum.html','datenschutz.html'];
+const pages = ['index.html','impressum.html','datenschutz.html','cookie-einstellungen.html'];
 let refs = 0;
 for (const page of pages) {
   const html = await fs.readFile(page, 'utf8');

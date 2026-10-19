@@ -24,7 +24,7 @@ const server = http.createServer(async (req,res) => {
     }
     const relative = pathname === '/' ? 'index.html' : pathname.slice(1);
     // Serve only the explicitly public files; research and source stay private.
-    const isPage = ['index.html','impressum.html','datenschutz.html'].includes(relative);
+    const isPage = ['index.html','impressum.html','datenschutz.html','cookie-einstellungen.html'].includes(relative);
     const base = isPage ? root : path.join(root,'public');
     const target = path.resolve(base, relative);
     if (!target.startsWith(base + path.sep) || relative.includes('\\') || relative.split('/').some(part => part.startsWith('.'))) {res.writeHead(403);res.end('Forbidden');return;}

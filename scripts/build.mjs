@@ -7,7 +7,7 @@ if (path.dirname(output) !== path.resolve(root)) throw new Error('Invalid build 
 await fs.rm(output, {recursive:true, force:true});
 await fs.mkdir(output, {recursive:true});
 let pages = '';
-for (const file of ['index.html','impressum.html','datenschutz.html']) {
+for (const file of ['index.html','impressum.html','datenschutz.html','cookie-einstellungen.html']) {
   const html = (await fs.readFile(path.join(root, file), 'utf8')).replace('<html lang="de">', '<html lang="de" data-reviews-api="disabled">');
   pages += html;
   await fs.writeFile(path.join(output, file), html);
