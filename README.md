@@ -2,7 +2,16 @@
 
 Umgesetzt direkt im zuvor leeren Projektverzeichnis. Keine bestehenden Funktionen oder Dateien ersetzt. HTML/CSS/JavaScript-Website ohne Framework, Installation, Datenbank, Cookies oder Tracking. Ein kleiner Node-Server liefert die lokalen Dateien und die vorbereitete Google-Bewertungsschnittstelle aus. Nicht veröffentlicht. Suchmaschinen-Indexierung ist mit `noindex, nofollow` deaktiviert; dies ist kein Zugriffsschutz.
 
-## Lokal starten
+## Cloudflare Workers
+
+Build-Befehl: `npm run build`. Deploy-Befehl: `npx wrangler deploy`.
+Die versionierte `wrangler.jsonc` setzt `assets.directory` auf `./dist`.
+Dadurch werden nur die erzeugten Website-Dateien hochgeladen, keine
+Recherchedateien, Serverquellen oder installierten Pakete.
+Die Node-Route `/api/reviews` ist bei diesem statischen Hosting nicht verfügbar;
+die vorbereitete Google-Synchronisierung benötigt weiterhin einen Server.
+
+## Lokale Vorschau
 
 ```powershell
 node scripts/serve.mjs
